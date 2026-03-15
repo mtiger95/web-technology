@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[97367,["/web-technology/_next/static/chunks/ff1a16fafef87110.js","/web-technology/_next/static/chunks/d2be314c3ece3fbe.js"],"ViewportBoundary"]
+3:I[97367,["/web-technology/_next/static/chunks/ff1a16fafef87110.js","/web-technology/_next/static/chunks/d2be314c3ece3fbe.js"],"MetadataBoundary"]
+4:"$Sreact.suspense"
+5:I[27201,["/web-technology/_next/static/chunks/ff1a16fafef87110.js","/web-technology/_next/static/chunks/d2be314c3ece3fbe.js"],"IconMark"]
+0:{"buildId":"66LHfSbHeZFNr7BOc-Oco","rsc":["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L2",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L3",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"前端知识宝典 - Senior Frontend Knowledge Guide"}],["$","meta","1",{"name":"description","content":"资深前端开发知识点集合，包含 React、Vue、TypeScript、性能优化、安全、工程化等内容"}],["$","link","2",{"rel":"icon","href":"/web-technology/favicon.ico?favicon.0b3bf435.ico","sizes":"256x256","type":"image/x-icon"}],["$","$L5","3",{}]]}]}]}],null]}],"loading":null,"isPartial":false}
