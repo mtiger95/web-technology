@@ -1,0 +1,61 @@
+/* 主题颜色变量 */
+:root {
+  /* 基础颜色 */
+  --color-primary: #6366f1;
+  --color-primary-hover: #4f46e5;
+  --color-primary-light: #818cf8;
+  --color-primary-dark: #4338ca;
+  
+  --color-secondary: #8b5cf6;
+  --color-secondary-hover: #7c3aed;
+  --color-secondary-light: #a78bfa;
+  --color-secondary-dark: #6d28d9;
+  
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --color-info: #3b82f6;
+  
+  /* 中性色 */
+  --color-background: #f8fafc;
+  --color-foreground: #1e293b;
+  --color-card-bg: #ffffff;
+  --color-border: #e2e8f0;
+  --color-text-primary: #1e293b;
+  --color-text-secondary: #64748b;
+  --color-text-muted: #94a3b8;
+  
+  /* 难度等级颜色 */
+  --color-easy: #10b981;    /* green */
+  --color-medium: #f59e0b;  /* orange */
+  --color-hard: #ef4444;    /* red */
+  
+  /* 侧边栏颜色 */
+  --color-sidebar-bg: #ffffff;
+  --color-sidebar-text: #1e293b;
+  --color-sidebar-hover: #f1f5f9;
+  
+  /* 渐变色 */
+  --gradient-primary: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  --gradient-primary-hover: linear-gradient(135deg, var(--color-primary-hover) 0%, var(--color-secondary-hover) 100%);
+  
+  /* 阴影 */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* 暗色主题 */
+[data-theme="dark"] {
+  --color-background: #0f172a;
+  --color-foreground: #f1f5f9;
+  --color-card-bg: #1e293b;
+  --color-border: #334155;
+  --color-text-primary: #f1f5f9;
+  --color-text-secondary: #94a3b8;
+  --color-text-muted: #64748b;
+  --color-sidebar-bg: #0f172a;
+  --color-sidebar-text: #e2e8f0;
+  --color-sidebar-hover: #1e293b;
+}

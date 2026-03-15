@@ -1,8 +1,21 @@
-@import "tailwindcss";
+  @import "tailwindcss";
+@import 'antd/dist/reset.css';
+@import '../styles/theme.css';
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* 保留 Tailwind 相关变量 */
+  --primary-color: var(--color-primary);
+  --primary-hover: var(--color-primary-hover);
+  --success-color: var(--color-success);
+  --warning-color: var(--color-warning);
+  --error-color: var(--color-error);
+  --background: var(--color-background);
+  --foreground: var(--color-foreground);
+  --card-bg: var(--color-card-bg);
+  --border-color: var(--color-border);
+  --text-secondary: var(--color-text-secondary);
+  --sidebar-bg: var(--color-sidebar-bg);
+  --sidebar-text: var(--color-sidebar-text);
 }
 
 @theme inline {
@@ -12,15 +25,469 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  line-height: 1.6;
+}
+
+/* 自定义滚动条 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-muted);
+}
+
+/* Markdown内容样式优化 */
+.markdown-content {
+  line-height: 1.8;
+  color: var(--foreground);
+}
+
+.markdown-content h1,
+.markdown-content h2,
+.markdown-content h3,
+.markdown-content h4 {
+  color: var(--foreground);
+  font-weight: 600;
+  margin-top: 1.5em;
+  margin-bottom: 0.8em;
+}
+
+.markdown-content h2 {
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 0.5em;
+}
+
+.markdown-content h3 {
+  border-left: 4px solid var(--primary-color);
+  padding-left: 1em;
+}
+
+.markdown-content p {
+  margin-bottom: 1em;
+}
+
+.markdown-content ul,
+.markdown-content ol {
+  margin-bottom: 1em;
+  padding-left: 1.5em;
+}
+
+.markdown-content li {
+  margin-bottom: 0.5em;
+}
+
+.markdown-content code {
+  background: var(--background);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-family: 'Monaco', 'Courier New', monospace;
+  font-size: 0.9em;
+  color: var(--primary-color);
+}
+
+.markdown-content pre {
+  background: #1e293b !important;
+  color: #e2e8f0 !important;
+  padding: 1em;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin-bottom: 1em;
+  border: 1px solid #334155 !important;
+}
+
+.markdown-content pre code {
+  background: transparent !important;
+  color: #e2e8f0 !important;
+  padding: 0;
+}
+
+.markdown-content strong {
+  color: var(--foreground);
+  font-weight: 600;
+}
+
+.markdown-content em {
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+/* 卡片悬停效果 */
+.ant-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.ant-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-color: var(--primary-color);
+}
+
+/* 按钮样式优化 */
+.ant-btn {
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.ant-btn-primary {
+  background: var(--gradient-primary);
+  border: none;
+  box-shadow: 0 2px 4px rgba(99, 102, 241, 0.3);
+}
+
+.ant-btn-primary:hover {
+  background: var(--gradient-primary-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(99, 102, 241, 0.4);
+}
+
+/* 标签样式优化 */
+.ant-tag {
+  border-radius: 6px;
+  font-weight: 500;
+  padding: 4px 12px;
+  border: none;
+}
+
+/* 输入框样式优化 */
+.ant-input,
+.ant-input-search {
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  transition: all 0.2s ease;
+}
+
+.ant-input:focus,
+.ant-input-search:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+/* 搜索框按钮高度匹配输入框 */
+.ant-input-search .ant-input {
+  border-radius: 8px 0 0 8px;
+  border-right: none;
+}
+
+.ant-input-search .ant-btn {
+  height: 100% !important;
+  min-height: 32px;
+  border-radius: 0 8px 8px 0; 
+  border-left: none;
+  background: var(--gradient-primary);
+  color: white;
+}
+
+.ant-input-search.ant-input-search-small .ant-btn {
+  min-height: 36px;
+  height: 36px;
+}
+
+.ant-input-search .ant-btn:hover {
+  background: var(--gradient-primary-hover);
+  border-color: var(--primary-color);
+}
+
+.ant-input-search .ant-btn .anticon {
+  font-size: 16px;
+}
+
+/* 菜单样式优化 */
+.ant-menu {
+  border-right: none;
+}
+
+.ant-menu-item {
+  border-radius: 6px;
+  margin: 4px 8px;
+  transition: all 0.2s ease;
+  background: transparent;
+  color: var(--text-secondary);
+}
+
+.ant-menu-item:hover {
+  background: rgba(99, 102, 241, 0.1);
+  color: var(--primary-color);
+}
+
+.ant-menu-item-selected {
+  background: rgba(99, 102, 241, 0.15);
+  color: var(--primary-color) !important;
+  font-weight: 500;
+}
+
+/* 暗色模式下菜单选中项背景色调暗 */
+[data-theme="dark"] .ant-menu-item-selected {
+  background: rgba(99, 102, 241, 0.10) !important;
+  border-left: 3px solid var(--color-primary) !important;
+}
+
+.ant-menu-submenu-title {
+  color: var(--foreground);
+  font-weight: 600;
+}
+
+.ant-menu-item {
+  color: var(--text-secondary);
+}
+
+/* 菜单背景色 */
+.ant-menu-light {
+  background: transparent;
+  color: var(--text-secondary);
+}
+
+.ant-menu-dark {
+  background: var(--color-primary);
+  color: white;
+}
+
+/* 修复菜单项颜色对比度 */
+.ant-menu-item:not(.ant-menu-item-selected):not(:hover) {
+  color: var(--color-text-secondary) !important;
+}
+
+[data-theme="dark"] .ant-menu-item:not(.ant-menu-item-selected):not(:hover) {
+  color: var(--color-text-secondary) !important;
+}
+
+/* 特别增强暗色模式下菜单项的对比度 */
+[data-theme="dark"] .ant-menu-light .ant-menu-item {
+  color: var(--color-text-secondary) !important;
+}
+
+[data-theme="dark"] .ant-menu-light .ant-menu-item:hover {
+  color: var(--color-primary) !important;
+}
+
+[data-theme="dark"] .ant-menu-submenu-title {
+  color: var(--color-foreground) !important;
+}
+
+/* 标题样式优化 */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--foreground);
+  font-weight: 700;
+}
+
+/* 文本颜色优化 */
+.ant-typography {
+  color: var(--foreground);
+}
+
+.ant-typography-secondary {
+  color: var(--text-secondary);
+}
+
+/* 侧边栏样式优化 */
+.ant-layout-sider {
+  background: var(--sidebar-bg);
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 内容区域优化 */
+.ant-layout-content {
+  background: var(--background);
+}
+
+/* 卡片样式优化 */
+.ant-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  color: var(--foreground);
+}
+
+.ant-card-head {
+  background: transparent;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--foreground);
+}
+
+.ant-card-body {
+  background: var(--card-bg);
+  color: var(--foreground);
+  padding: 1.5rem;
+}
+
+/* 卡片悬停效果 */
+.ant-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ant-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-color: var(--primary-color);
+}
+
+/* 标签颜色优化 */
+.ant-tag {
+  background: var(--color-background);
+  color: var(--color-text-primary);
+  border: 1px solid var(--color-border);
+}
+
+.ant-tag-green {
+  background: rgba(16, 185, 129, 0.1);
+  color: var(--success-color);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.ant-tag-orange {
+  background: rgba(245, 158, 11, 0.1);
+  color: var(--warning-color);
+  border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+.ant-tag-red {
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--error-color);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.ant-tag-blue {
+  background: rgba(59, 130, 246, 0.1);
+  color: var(--info-color);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+/* 修复顶部搜索卡片的文本颜色 */
+.search-card {
+  color: var(--color-foreground) !important;
+}
+
+.search-card .ant-typography {
+  color: var(--color-text-primary) !important;
+}
+
+/* 修复结果计数文本颜色 */
+.result-count-text {
+  color: var(--color-text-primary) !important;
+}
+
+.result-count-highlight {
+  color: var(--color-primary) !important;
+}
+
+.result-info-text {
+  color: var(--color-text-secondary) !important;
+}
+
+/* 修复知识点标签样式 */
+.knowledge-tag {
+  background: var(--color-background) !important;
+  color: var(--color-text-primary) !important;
+  border: 1px solid var(--color-border) !important;
+}
+
+.knowledge-tag-blue {
+  background: rgba(59, 130, 246, 0.1) !important;
+  color: var(--color-text-primary) !important;
+  border: 1px solid rgba(59, 130, 246, 0.2) !important;
+}
+
+/* 知识内容卡片样式 */
+.knowledge-content-card {
+  background: var(--color-card-bg) !important;
+  border: 1px solid var(--color-border) !important;
+  color: var(--color-foreground) !important;
+}
+
+.knowledge-content-card .ant-card-body {
+  background: var(--color-card-bg) !important;
+  color: var(--color-foreground) !important;
+}
+
+/* 确保卡片头部也有正确的主题支持 */
+.knowledge-content-card .ant-card-head {
+  background: var(--color-card-bg) !important;
+  border-bottom: 1px solid var(--color-border) !important;
+  color: var(--color-foreground) !important;
+}
+
+.knowledge-content-card .ant-card-head-title {
+  color: var(--color-foreground) !important;
+}
+
+/* 修复所有卡片组件的文本颜色 */
+.ant-card {
+  color: var(--color-foreground) !important;
+}
+
+.ant-card-head {
+  color: var(--color-foreground) !important;
+  background: var(--color-card-bg) !important;
+}
+
+.ant-card-head-title {
+  color: var(--color-foreground) !important;
+}
+
+/* 强制确保所有卡片相关文本颜色正确 */
+.ant-card .ant-typography,
+.ant-card .ant-card-head-wrapper,
+.ant-card .ant-card-extra {
+  color: var(--color-foreground) !important;
+}
+
+/* 确保所有标题在卡片内有正确的颜色 */
+.ant-card h1,
+.ant-card h2,
+.ant-card h3,
+.ant-card h4,
+.ant-card h5,
+.ant-card h6 {
+  color: var(--color-foreground) !important;
+}
+
+/* 修复面包屑导航的文本颜色 */
+.ant-breadcrumb {
+  color: var(--color-text-secondary) !important;
+}
+
+.ant-breadcrumb a {
+  color: var(--color-text-secondary) !important;
+}
+
+.ant-breadcrumb a:hover {
+  color: var(--color-primary) !important;
+}
+
+.ant-breadcrumb .ant-breadcrumb-separator {
+  color: var(--color-text-muted) !important;
+}
+
+/* 确保面包屑最后一级（当前页面）有正确的颜色 */
+.ant-breadcrumb .ant-breadcrumb-link:last-child {
+  color: var(--color-foreground) !important;
+}
+
+/* 修复面包屑最后一级的链接颜色 */
+.ant-breadcrumb span:last-child {
+  color: var(--color-foreground) !important;
+}
+
+/* 更具体的选择器来确保面包屑最后一项的文本颜色 */
+.ant-breadcrumb-item:last-child .ant-breadcrumb-link {
+  color: var(--color-foreground) !important;
+}
+
+.ant-breadcrumb-item:last-child span {
+  color: var(--color-foreground) !important;
 }
