@@ -1,5 +1,6 @@
 import { knowledgeList, categories } from '@/data';
 
+// 生成静态参数
 export function generateStaticParams() {
   const params: { category: string; id: string }[] = [];
   for (const category of categories) {
