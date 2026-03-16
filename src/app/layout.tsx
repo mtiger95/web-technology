@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import ThemeToggle from '@/components/ThemeToggle';
 
 export const metadata: Metadata = {
   title: '前端知识宝典 - Senior Frontend Knowledge Guide',
@@ -15,6 +16,7 @@ export default function RootLayout({
     <html lang="zh-CN">
       <body className="antialiased">
         {children}
+        <ThemeToggle />
       </body>
     </html>
   );

@@ -17,7 +17,7 @@ export const javascriptCategoryData: CategoryData = {
   category: {
     
     id: 'javascript',
-    name: 'JavaScript/TypeScript',
+    name: 'Js/Ts',
     icon: '📜',
     count: 14,
     description: 'JavaScript 和 TypeScript 核心概念、高级特性和最佳实践'

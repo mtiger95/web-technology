@@ -1,1 +1,559 @@
-<!DOCTYPE html><!--sOiVWGktApzXvt3I98zxs--><html lang="zh-CN"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="/_next/static/chunks/d22ae33653958f67.css" data-precedence="next"/><link rel="preload" as="script" fetchPriority="low" href="/_next/static/chunks/ec3780c7434a4016.js"/><script src="/_next/static/chunks/035260f183d8e14a.js" async=""></script><script src="/_next/static/chunks/045c83caa4d15373.js" async=""></script><script src="/_next/static/chunks/turbopack-0da0b5854e3a07c3.js" async=""></script><script src="/_next/static/chunks/ff1a16fafef87110.js" async=""></script><script src="/_next/static/chunks/d2be314c3ece3fbe.js" async=""></script><script src="/_next/static/chunks/36316c6d582e4605.js" async=""></script><script src="/_next/static/chunks/223bb6d08dd3e7e3.js" async=""></script><script src="/_next/static/chunks/dae01ddd18a7e848.js" async=""></script><title>前端知识宝典 - Senior Frontend Knowledge Guide</title><meta name="description" content="资深前端开发知识点集合，包含 React、Vue、TypeScript、性能优化、安全、工程化等内容"/><link rel="icon" href="/favicon.ico?favicon.0b3bf435.ico" sizes="256x256" type="image/x-icon"/><script src="/_next/static/chunks/a6dad97d9634a72d.js" noModule=""></script></head><body class="antialiased"><div hidden=""><!--$--><!--/$--></div><div class="ant-layout css-1daqxe2 css-var-root"><aside class="ant-layout-sider ant-layout-sider-light css-1daqxe2 css-var-root" style="position:fixed;left:0;top:0;height:100vh;background:var(--sidebar-bg);box-shadow:2px 0 8px rgba(0, 0, 0, 0.1);z-index:1000;flex:0 0 300px;max-width:300px;min-width:300px;width:300px"><div class="ant-layout-sider-children"><div class="p-6 border-b border-gray-200"><a class="block" href="/"><div class="flex items-center gap-3 mb-2"><span style="width:48px;height:48px;font-size:24px;background:linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);border:3px solid rgba(99, 102, 241, 0.1)" class="ant-avatar ant-avatar-circle ant-avatar-icon css-var-root ant-avatar-css-var css-1daqxe2"><span role="img" aria-label="book" class="anticon anticon-book"><svg viewBox="64 64 896 896" focusable="false" data-icon="book" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M832 64H192c-17.7 0-32 14.3-32 32v832c0 17.7 14.3 32 32 32h640c17.7 0 32-14.3 32-32V96c0-17.7-14.3-32-32-32zm-260 72h96v209.9L621.5 312 572 347.4V136zm220 752H232V136h280v296.9c0 3.3 1 6.6 3 9.3a15.9 15.9 0 0022.3 3.7l83.8-59.9 81.4 59.4c2.7 2 6 3.1 9.4 3.1 8.8 0 16-7.2 16-16V136h64v752z"></path></svg></span></span><div><h4 class="ant-typography css-1daqxe2 css-var-root" style="color:var(--color-foreground);margin:0;font-size:18px">前端知识宝典</h4><span class="ant-typography css-1daqxe2 css-var-root" style="color:var(--color-text-secondary);font-size:12px">Senior Frontend Knowledge</span></div></div></a></div><ul class="ant-menu ant-menu-root ant-menu-inline ant-menu-light sidebar-menu css-1daqxe2 css-var-root ant-menu-css-var" style="height:calc(100vh - 140px);overflow-y:auto;border-right:0;background:transparent;padding-top:16px" role="menu" tabindex="0" data-menu-list="true"><li class="ant-menu-item" style="padding-left:24px" role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-all"><span role="img" aria-label="home" class="anticon anticon-home ant-menu-item-icon"><svg viewBox="64 64 896 896" focusable="false" data-icon="home" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M946.5 505L560.1 118.8l-25.9-25.9a31.5 31.5 0 00-44.4 0L77.5 505a63.9 63.9 0 00-18.8 46c.4 35.2 29.7 63.3 64.9 63.3h42.5V940h691.8V614.3h43.4c17.1 0 33.2-6.7 45.3-18.8a63.6 63.6 0 0018.7-45.3c0-17-6.7-33.1-18.8-45.2zM568 868H456V664h112v204zm217.9-325.7V868H632V640c0-22.1-17.9-40-40-40H432c-22.1 0-40 17.9-40 40v228H238.1V542.3h-96l370-369.7 23.1 23.1L882 542.3h-96.1z"></path></svg></span><span class="ant-menu-title-content"><a class="flex items-center justify-between" href="/"><span>全部知识点</span><span class="text-xs opacity-70 bg-white/10 px-2 py-1 rounded-full">70</span></a></span></li><li class="ant-menu-submenu ant-menu-submenu-inline" role="none"><div role="menuitem" style="padding-left:24px" class="ant-menu-submenu-title" tabindex="-1" data-menu-id="rc-menu-uuid-react" aria-expanded="false" aria-haspopup="true" aria-controls="rc-menu-uuid-react-popup"><span role="img" aria-label="thunderbolt" class="anticon anticon-thunderbolt ant-menu-item-icon"><svg viewBox="64 64 896 896" focusable="false" data-icon="thunderbolt" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M848 359.3H627.7L825.8 109c4.1-5.3.4-13-6.3-13H436c-2.8 0-5.5 1.5-6.9 4L170 547.5c-3.1 5.3.7 12 6.9 12h174.4l-89.4 357.6c-1.9 7.8 7.5 13.3 13.3 7.7L853.5 373c5.2-4.9 1.7-13.7-5.5-13.7zM378.2 732.5l60.3-241H281.1l189.6-327.4h224.6L487 427.4h211L378.2 732.5z"></path></svg></span><span class="ant-menu-title-content"><div class="flex items-center justify-between"><span>React 生态</span><span class="text-xs opacity-70 bg-white/10 px-2 py-1 rounded-full">15</span></div></span><i class="ant-menu-submenu-arrow"></i></div></li><li class="ant-menu-submenu ant-menu-submenu-inline" role="none"><div role="menuitem" style="padding-left:24px" class="ant-menu-submenu-title" tabindex="-1" data-menu-id="rc-menu-uuid-javascript" aria-expanded="false" aria-haspopup="true" aria-controls="rc-menu-uuid-javascript-popup"><span role="img" aria-label="code" class="anticon anticon-code ant-menu-item-icon"><svg viewBox="64 64 896 896" focusable="false" data-icon="code" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M516 673c0 4.4 3.4 8 7.5 8h185c4.1 0 7.5-3.6 7.5-8v-48c0-4.4-3.4-8-7.5-8h-185c-4.1 0-7.5 3.6-7.5 8v48zm-194.9 6.1l192-161c3.8-3.2 3.8-9.1 0-12.3l-192-160.9A7.95 7.95 0 00308 351v62.7c0 2.4 1 4.6 2.9 6.1L420.7 512l-109.8 92.2a8.1 8.1 0 00-2.9 6.1V673c0 6.8 7.9 10.5 13.1 6.1zM880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zm-40 728H184V184h656v656z"></path></svg></span><span class="ant-menu-title-content"><div class="flex items-center justify-between"><span>JavaScript/TypeScript</span><span class="text-xs opacity-70 bg-white/10 px-2 py-1 rounded-full">13</span></div></span><i class="ant-menu-submenu-arrow"></i></div></li><li class="ant-menu-submenu ant-menu-submenu-inline" role="none"><div role="menuitem" style="padding-left:24px" class="ant-menu-submenu-title" tabindex="-1" data-menu-id="rc-menu-uuid-css" aria-expanded="false" aria-haspopup="true" aria-controls="rc-menu-uuid-css-popup"><span role="img" aria-label="layout" class="anticon anticon-layout ant-menu-item-icon"><svg viewBox="64 64 896 896" focusable="false" data-icon="layout" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zm-696 72h136v656H184V184zm656 656H384V384h456v456zM384 320V184h456v136H384z"></path></svg></span><span class="ant-menu-title-content"><div class="flex items-center justify-between"><span>CSS 布局</span><span class="text-xs opacity-70 bg-white/10 px-2 py-1 rounded-full">11</span></div></span><i class="ant-menu-submenu-arrow"></i></div></li><li class="ant-menu-submenu ant-menu-submenu-inline" role="none"><div role="menuitem" style="padding-left:24px" class="ant-menu-submenu-title" tabindex="-1" data-menu-id="rc-menu-uuid-vue" aria-expanded="false" aria-haspopup="true" aria-controls="rc-menu-uuid-vue-popup"><span role="img" aria-label="book" class="anticon anticon-book ant-menu-item-icon"><svg viewBox="64 64 896 896" focusable="false" data-icon="book" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M832 64H192c-17.7 0-32 14.3-32 32v832c0 17.7 14.3 32 32 32h640c17.7 0 32-14.3 32-32V96c0-17.7-14.3-32-32-32zm-260 72h96v209.9L621.5 312 572 347.4V136zm220 752H232V136h280v296.9c0 3.3 1 6.6 3 9.3a15.9 15.9 0 0022.3 3.7l83.8-59.9 81.4 59.4c2.7 2 6 3.1 9.4 3.1 8.8 0 16-7.2 16-16V136h64v752z"></path></svg></span><span class="ant-menu-title-content"><div class="flex items-center justify-between"><span>Vue 生态</span><span class="text-xs opacity-70 bg-white/10 px-2 py-1 rounded-full">5</span></div></span><i class="ant-menu-submenu-arrow"></i></div></li><li class="ant-menu-submenu ant-menu-submenu-inline" role="none"><div role="menuitem" style="padding-left:24px" class="ant-menu-submenu-title" tabindex="-1" data-menu-id="rc-menu-uuid-performance" aria-expanded="false" aria-haspopup="true" aria-controls="rc-menu-uuid-performance-popup"><span role="img" aria-label="rocket" class="anticon anticon-rocket ant-menu-item-icon"><svg viewBox="64 64 896 896" focusable="false" data-icon="rocket" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M864 736c0-111.6-65.4-208-160-252.9V317.3c0-15.1-5.3-29.7-15.1-41.2L536.5 95.4C530.1 87.8 521 84 512 84s-18.1 3.8-24.5 11.4L335.1 276.1a63.97 63.97 0 00-15.1 41.2v165.8C225.4 528 160 624.4 160 736h156.5c-2.3 7.2-3.5 15-3.5 23.8 0 22.1 7.6 43.7 21.4 60.8a97.2 97.2 0 0043.1 30.6c23.1 54 75.6 88.8 134.5 88.8 29.1 0 57.3-8.6 81.4-24.8 23.6-15.8 41.9-37.9 53-64a97 97 0 0043.1-30.5 97.52 97.52 0 0021.4-60.8c0-8.4-1.1-16.4-3.1-23.8H864zM762.3 621.4c9.4 14.6 17 30.3 22.5 46.6H700V558.7a211.6 211.6 0 0162.3 62.7zM388 483.1V318.8l124-147 124 147V668H388V483.1zM239.2 668c5.5-16.3 13.1-32 22.5-46.6 16.3-25.2 37.5-46.5 62.3-62.7V668h-84.8zm388.9 116.2c-5.2 3-11.2 4.2-17.1 3.4l-19.5-2.4-2.8 19.4c-5.4 37.9-38.4 66.5-76.7 66.5-38.3 0-71.3-28.6-76.7-66.5l-2.8-19.5-19.5 2.5a27.7 27.7 0 01-17.1-3.5c-8.7-5-14.1-14.3-14.1-24.4 0-10.6 5.9-19.4 14.6-23.8h231.3c8.8 4.5 14.6 13.3 14.6 23.8-.1 10.2-5.5 19.6-14.2 24.5zM464 400a48 48 0 1096 0 48 48 0 10-96 0z"></path></svg></span><span class="ant-menu-title-content"><div class="flex items-center justify-between"><span>性能优化</span><span class="text-xs opacity-70 bg-white/10 px-2 py-1 rounded-full">5</span></div></span><i class="ant-menu-submenu-arrow"></i></div></li><li class="ant-menu-submenu ant-menu-submenu-inline" role="none"><div role="menuitem" style="padding-left:24px" class="ant-menu-submenu-title" tabindex="-1" data-menu-id="rc-menu-uuid-security" aria-expanded="false" aria-haspopup="true" aria-controls="rc-menu-uuid-security-popup"><span role="img" aria-label="safety" class="anticon anticon-safety ant-menu-item-icon"><svg viewBox="0 0 1024 1024" focusable="false" data-icon="safety" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M512 64L128 192v384c0 212.1 171.9 384 384 384s384-171.9 384-384V192L512 64zm312 512c0 172.3-139.7 312-312 312S200 748.3 200 576V246l312-110 312 110v330z"></path><path d="M378.4 475.1a35.91 35.91 0 00-50.9 0 35.91 35.91 0 000 50.9l129.4 129.4 2.1 2.1a33.98 33.98 0 0048.1 0L730.6 434a33.98 33.98 0 000-48.1l-2.8-2.8a33.98 33.98 0 00-48.1 0L483 579.7 378.4 475.1z"></path></svg></span><span class="ant-menu-title-content"><div class="flex items-center justify-between"><span>前端安全</span><span class="text-xs opacity-70 bg-white/10 px-2 py-1 rounded-full">5</span></div></span><i class="ant-menu-submenu-arrow"></i></div></li><li class="ant-menu-submenu ant-menu-submenu-inline ant-menu-submenu-open" role="none"><div role="menuitem" style="padding-left:24px" class="ant-menu-submenu-title" tabindex="-1" data-menu-id="rc-menu-uuid-engineering" aria-expanded="true" aria-haspopup="true" aria-controls="rc-menu-uuid-engineering-popup"><span role="img" aria-label="branches" class="anticon anticon-branches ant-menu-item-icon"><svg viewBox="64 64 896 896" focusable="false" data-icon="branches" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M740 161c-61.8 0-112 50.2-112 112 0 50.1 33.1 92.6 78.5 106.9v95.9L320 602.4V318.1c44.2-15 76-56.9 76-106.1 0-61.8-50.2-112-112-112s-112 50.2-112 112c0 49.2 31.8 91 76 106.1V706c-44.2 15-76 56.9-76 106.1 0 61.8 50.2 112 112 112s112-50.2 112-112c0-49.2-31.8-91-76-106.1v-27.8l423.5-138.7a50.52 50.52 0 0034.9-48.2V378.2c42.9-15.8 73.6-57 73.6-105.2 0-61.8-50.2-112-112-112zm-504 51a48.01 48.01 0 0196 0 48.01 48.01 0 01-96 0zm96 600a48.01 48.01 0 01-96 0 48.01 48.01 0 0196 0zm408-491a48.01 48.01 0 010-96 48.01 48.01 0 010 96z"></path></svg></span><span class="ant-menu-title-content"><div class="flex items-center justify-between"><span>工程化</span><span class="text-xs opacity-70 bg-white/10 px-2 py-1 rounded-full">5</span></div></span><i class="ant-menu-submenu-arrow"></i></div><ul class="ant-menu ant-menu-sub ant-menu-inline" role="menu" id="rc-menu-uuid-engineering-popup" data-menu-list="true"><li role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-engineering-ci-cd" style="padding-left:48px" class="ant-menu-item ant-menu-item-only-child"><span class="ant-menu-title-content"><a class="flex items-center gap-2" href="/engineering/ci-cd"><span class="flex-1">CI/CD 持续集成与部署</span><span class="text-xs opacity-50">🟡</span></a></span></li><li role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-engineering-monorepo" style="padding-left:48px" class="ant-menu-item ant-menu-item-only-child"><span class="ant-menu-title-content"><a class="flex items-center gap-2" href="/engineering/monorepo"><span class="flex-1">Monorepo 管理策略</span><span class="text-xs opacity-50">🟡</span></a></span></li><li role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-engineering-code-quality" style="padding-left:48px" class="ant-menu-item ant-menu-item-only-child"><span class="ant-menu-title-content"><a class="flex items-center gap-2" href="/engineering/code-quality"><span class="flex-1">代码质量与规范</span><span class="text-xs opacity-50">🟡</span></a></span></li><li role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-engineering-build-optimization" style="padding-left:48px" class="ant-menu-item ant-menu-item-selected ant-menu-item-only-child"><span class="ant-menu-title-content"><a class="flex items-center gap-2" href="/engineering/build-optimization"><span class="flex-1">构建工具优化</span><span class="text-xs opacity-50">🟡</span></a></span></li><li role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-engineering-frontend-monitoring" style="padding-left:48px" class="ant-menu-item ant-menu-item-only-child"><span class="ant-menu-title-content"><a class="flex items-center gap-2" href="/engineering/frontend-monitoring"><span class="flex-1">前端监控与错误追踪</span><span class="text-xs opacity-50">🟡</span></a></span></li></ul></li><li class="ant-menu-submenu ant-menu-submenu-inline" role="none"><div role="menuitem" style="padding-left:24px" class="ant-menu-submenu-title" tabindex="-1" data-menu-id="rc-menu-uuid-browser" aria-expanded="false" aria-haspopup="true" aria-controls="rc-menu-uuid-browser-popup"><span role="img" aria-label="monitor" class="anticon anticon-monitor ant-menu-item-icon"><svg viewBox="64 64 896 896" focusable="false" data-icon="monitor" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M692.8 412.7l.2-.2-34.6-44.3a7.97 7.97 0 00-11.2-1.4l-50.4 39.3-70.5-90.1a7.97 7.97 0 00-11.2-1.4l-37.9 29.7a7.97 7.97 0 00-1.4 11.2l70.5 90.2-.2.1 34.6 44.3c2.7 3.5 7.7 4.1 11.2 1.4l50.4-39.3 64.1 82c2.7 3.5 7.7 4.1 11.2 1.4l37.9-29.6c3.5-2.7 4.1-7.7 1.4-11.2l-64.1-82.1zM608 112c-167.9 0-304 136.1-304 304 0 70.3 23.9 135 63.9 186.5L114.3 856.1a8.03 8.03 0 000 11.3l42.3 42.3c3.1 3.1 8.2 3.1 11.3 0l253.6-253.6C473 696.1 537.7 720 608 720c167.9 0 304-136.1 304-304S775.9 112 608 112zm161.2 465.2C726.2 620.3 668.9 644 608 644s-118.2-23.7-161.2-66.8C403.7 534.2 380 476.9 380 416s23.7-118.2 66.8-161.2c43-43.1 100.3-66.8 161.2-66.8s118.2 23.7 161.2 66.8c43.1 43 66.8 100.3 66.8 161.2s-23.7 118.2-66.8 161.2z"></path></svg></span><span class="ant-menu-title-content"><div class="flex items-center justify-between"><span>浏览器原理</span><span class="text-xs opacity-70 bg-white/10 px-2 py-1 rounded-full">5</span></div></span><i class="ant-menu-submenu-arrow"></i></div></li><li class="ant-menu-submenu ant-menu-submenu-inline" role="none"><div role="menuitem" style="padding-left:24px" class="ant-menu-submenu-title" tabindex="-1" data-menu-id="rc-menu-uuid-ai" aria-expanded="false" aria-haspopup="true" aria-controls="rc-menu-uuid-ai-popup"><span role="img" aria-label="thunderbolt" class="anticon anticon-thunderbolt ant-menu-item-icon"><svg viewBox="64 64 896 896" focusable="false" data-icon="thunderbolt" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M848 359.3H627.7L825.8 109c4.1-5.3.4-13-6.3-13H436c-2.8 0-5.5 1.5-6.9 4L170 547.5c-3.1 5.3.7 12 6.9 12h174.4l-89.4 357.6c-1.9 7.8 7.5 13.3 13.3 7.7L853.5 373c5.2-4.9 1.7-13.7-5.5-13.7zM378.2 732.5l60.3-241H281.1l189.6-327.4h224.6L487 427.4h211L378.2 732.5z"></path></svg></span><span class="ant-menu-title-content"><div class="flex items-center justify-between"><span>AI 学习</span><span class="text-xs opacity-70 bg-white/10 px-2 py-1 rounded-full">6</span></div></span><i class="ant-menu-submenu-arrow"></i></div></li></ul><div style="display:none" aria-hidden="true"></div></div></aside><div class="ant-layout css-1daqxe2 css-var-root" style="margin-left:300px"><main class="ant-layout-content css-1daqxe2" style="min-height:100vh;padding:32px;background:var(--color-background)"><div class="ant-card ant-card-bordered css-1daqxe2 css-var-root" style="border-radius:16px;text-align:center;padding:60px 24px"><div class="ant-card-body"><span class="ant-typography ant-typography-secondary css-1daqxe2 css-var-root" style="font-size:18px">知识点不存在</span></div></div></main></div></div><!--$--><!--/$--><script src="/_next/static/chunks/ec3780c7434a4016.js" id="_R_" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0])</script><script>self.__next_f.push([1,"1:\"$Sreact.fragment\"\n2:I[39756,[\"/_next/static/chunks/ff1a16fafef87110.js\",\"/_next/static/chunks/d2be314c3ece3fbe.js\"],\"default\"]\n3:I[37457,[\"/_next/static/chunks/ff1a16fafef87110.js\",\"/_next/static/chunks/d2be314c3ece3fbe.js\"],\"default\"]\n4:I[47257,[\"/_next/static/chunks/ff1a16fafef87110.js\",\"/_next/static/chunks/d2be314c3ece3fbe.js\"],\"ClientPageRoot\"]\n5:I[30221,[\"/_next/static/chunks/36316c6d582e4605.js\",\"/_next/static/chunks/223bb6d08dd3e7e3.js\",\"/_next/static/chunks/dae01ddd18a7e848.js\"],\"default\"]\n8:I[97367,[\"/_next/static/chunks/ff1a16fafef87110.js\",\"/_next/static/chunks/d2be314c3ece3fbe.js\"],\"OutletBoundary\"]\n9:\"$Sreact.suspense\"\nb:I[97367,[\"/_next/static/chunks/ff1a16fafef87110.js\",\"/_next/static/chunks/d2be314c3ece3fbe.js\"],\"ViewportBoundary\"]\nd:I[97367,[\"/_next/static/chunks/ff1a16fafef87110.js\",\"/_next/static/chunks/d2be314c3ece3fbe.js\"],\"MetadataBoundary\"]\nf:I[68027,[],\"default\"]\n:HL[\"/_next/static/chunks/d22ae33653958f67.css\",\"style\"]\n"])</script><script>self.__next_f.push([1,"0:{\"P\":null,\"b\":\"sOiVWGktApzXvt3I98zxs\",\"c\":[\"\",\"engineering\",\"build-optimization\"],\"q\":\"\",\"i\":false,\"f\":[[[\"\",{\"children\":[[\"category\",\"engineering\",\"d\"],{\"children\":[[\"id\",\"build-optimization\",\"d\"],{\"children\":[\"__PAGE__\",{}]}]}]},\"$undefined\",\"$undefined\",true],[[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/chunks/d22ae33653958f67.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"zh-CN\",\"children\":[\"$\",\"body\",null,{\"className\":\"antialiased\",\"children\":[\"$\",\"$L2\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L3\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":404}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]}]}]]}],{\"children\":[[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L2\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L3\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}],{\"children\":[[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L2\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L3\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}],{\"children\":[[\"$\",\"$1\",\"c\",{\"children\":[[\"$\",\"$L4\",null,{\"Component\":\"$5\",\"serverProvidedParams\":{\"searchParams\":{},\"params\":{\"category\":\"engineering\",\"id\":\"build-optimization\"},\"promises\":[\"$@6\",\"$@7\"]}}],[[\"$\",\"script\",\"script-0\",{\"src\":\"/_next/static/chunks/36316c6d582e4605.js\",\"async\":true,\"nonce\":\"$undefined\"}],[\"$\",\"script\",\"script-1\",{\"src\":\"/_next/static/chunks/223bb6d08dd3e7e3.js\",\"async\":true,\"nonce\":\"$undefined\"}],[\"$\",\"script\",\"script-2\",{\"src\":\"/_next/static/chunks/dae01ddd18a7e848.js\",\"async\":true,\"nonce\":\"$undefined\"}]],[\"$\",\"$L8\",null,{\"children\":[\"$\",\"$9\",null,{\"name\":\"Next.MetadataOutlet\",\"children\":\"$@a\"}]}]]}],{},null,false,false]},null,false,false]},null,false,false]},null,false,false],[\"$\",\"$1\",\"h\",{\"children\":[null,[\"$\",\"$Lb\",null,{\"children\":\"$Lc\"}],[\"$\",\"div\",null,{\"hidden\":true,\"children\":[\"$\",\"$Ld\",null,{\"children\":[\"$\",\"$9\",null,{\"name\":\"Next.Metadata\",\"children\":\"$Le\"}]}]}],null]}],false]],\"m\":\"$undefined\",\"G\":[\"$f\",[]],\"S\":true}\n"])</script><script>self.__next_f.push([1,"6:{}\n7:\"$0:f:0:1:1:children:1:children:1:children:0:props:children:0:props:serverProvidedParams:params\"\n"])</script><script>self.__next_f.push([1,"c:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\n"])</script><script>self.__next_f.push([1,"10:I[27201,[\"/_next/static/chunks/ff1a16fafef87110.js\",\"/_next/static/chunks/d2be314c3ece3fbe.js\"],\"IconMark\"]\na:null\ne:[[\"$\",\"title\",\"0\",{\"children\":\"前端知识宝典 - Senior Frontend Knowledge Guide\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"资深前端开发知识点集合，包含 React、Vue、TypeScript、性能优化、安全、工程化等内容\"}],[\"$\",\"link\",\"2\",{\"rel\":\"icon\",\"href\":\"/favicon.ico?favicon.0b3bf435.ico\",\"sizes\":\"256x256\",\"type\":\"image/x-icon\"}],[\"$\",\"$L10\",\"3\",{}]]\n"])</script></body></html>
+<!DOCTYPE html><!--QMn5glr2jM91Fp_xA_xNw--><html lang="zh-CN"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="/_next/static/chunks/4bb696a494cd2ed8.css" data-precedence="next"/><link rel="preload" as="script" fetchPriority="low" href="/_next/static/chunks/ec3780c7434a4016.js"/><script src="/_next/static/chunks/035260f183d8e14a.js" async=""></script><script src="/_next/static/chunks/045c83caa4d15373.js" async=""></script><script src="/_next/static/chunks/turbopack-0da0b5854e3a07c3.js" async=""></script><script src="/_next/static/chunks/ff1a16fafef87110.js" async=""></script><script src="/_next/static/chunks/d2be314c3ece3fbe.js" async=""></script><script src="/_next/static/chunks/e8a64840de2db263.js" async=""></script><script src="/_next/static/chunks/223bb6d08dd3e7e3.js" async=""></script><script src="/_next/static/chunks/c155ac4970f05a3f.js" async=""></script><title>前端知识宝典 - Senior Frontend Knowledge Guide</title><meta name="description" content="资深前端开发知识点集合，包含 React、Vue、TypeScript、性能优化、安全、工程化等内容"/><link rel="icon" href="/favicon.ico?favicon.0b3bf435.ico" sizes="256x256" type="image/x-icon"/><script src="/_next/static/chunks/a6dad97d9634a72d.js" noModule=""></script></head><body class="antialiased"><div hidden=""><!--$--><!--/$--></div><div class="ant-layout css-1daqxe2 css-var-root"><aside class="ant-layout-sider ant-layout-sider-light css-1daqxe2 css-var-root" style="position:fixed;left:0;top:0;height:100vh;background:var(--sidebar-bg);box-shadow:2px 0 8px rgba(0, 0, 0, 0.1);z-index:1000;flex:0 0 300px;max-width:300px;min-width:300px;width:300px"><div class="ant-layout-sider-children"><div class="p-6 border-b border-gray-200"><a class="block" href="/"><div class="flex items-center gap-3 mb-2"><span style="width:48px;height:48px;font-size:24px;background:linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);border:3px solid rgba(99, 102, 241, 0.1)" class="ant-avatar ant-avatar-circle ant-avatar-icon css-var-root ant-avatar-css-var css-1daqxe2"><span role="img" aria-label="book" class="anticon anticon-book"><svg viewBox="64 64 896 896" focusable="false" data-icon="book" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M832 64H192c-17.7 0-32 14.3-32 32v832c0 17.7 14.3 32 32 32h640c17.7 0 32-14.3 32-32V96c0-17.7-14.3-32-32-32zm-260 72h96v209.9L621.5 312 572 347.4V136zm220 752H232V136h280v296.9c0 3.3 1 6.6 3 9.3a15.9 15.9 0 0022.3 3.7l83.8-59.9 81.4 59.4c2.7 2 6 3.1 9.4 3.1 8.8 0 16-7.2 16-16V136h64v752z"></path></svg></span></span><div><h4 class="ant-typography css-1daqxe2 css-var-root" style="color:var(--color-foreground);margin:0;font-size:18px">前端知识宝典</h4><span class="ant-typography css-1daqxe2 css-var-root" style="color:var(--color-text-secondary);font-size:12px">Senior Frontend Knowledge</span></div></div></a></div><ul class="ant-menu ant-menu-root ant-menu-inline ant-menu-light sidebar-menu css-1daqxe2 css-var-root ant-menu-css-var" style="height:calc(100vh - 140px);overflow-y:auto;border-right:0;background:transparent;padding-top:16px" role="menu" tabindex="0" data-menu-list="true"><li class="ant-menu-item" style="padding-left:24px" role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-all"><span role="img" aria-label="home" class="anticon anticon-home ant-menu-item-icon"><svg viewBox="64 64 896 896" focusable="false" data-icon="home" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M946.5 505L560.1 118.8l-25.9-25.9a31.5 31.5 0 00-44.4 0L77.5 505a63.9 63.9 0 00-18.8 46c.4 35.2 29.7 63.3 64.9 63.3h42.5V940h691.8V614.3h43.4c17.1 0 33.2-6.7 45.3-18.8a63.6 63.6 0 0018.7-45.3c0-17-6.7-33.1-18.8-45.2zM568 868H456V664h112v204zm217.9-325.7V868H632V640c0-22.1-17.9-40-40-40H432c-22.1 0-40 17.9-40 40v228H238.1V542.3h-96l370-369.7 23.1 23.1L882 542.3h-96.1z"></path></svg></span><span class="ant-menu-title-content"><a class="flex items-center justify-between" href="/"><span>全部知识点</span><span class="text-xs opacity-70 bg-white/10 px-2 py-1 rounded-full">70</span></a></span></li><li class="ant-menu-submenu ant-menu-submenu-inline" role="none"><div role="menuitem" style="padding-left:24px" class="ant-menu-submenu-title" tabindex="-1" data-menu-id="rc-menu-uuid-react" aria-expanded="false" aria-haspopup="true" aria-controls="rc-menu-uuid-react-popup"><span role="img" aria-label="thunderbolt" class="anticon anticon-thunderbolt ant-menu-item-icon"><svg viewBox="64 64 896 896" focusable="false" data-icon="thunderbolt" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M848 359.3H627.7L825.8 109c4.1-5.3.4-13-6.3-13H436c-2.8 0-5.5 1.5-6.9 4L170 547.5c-3.1 5.3.7 12 6.9 12h174.4l-89.4 357.6c-1.9 7.8 7.5 13.3 13.3 7.7L853.5 373c5.2-4.9 1.7-13.7-5.5-13.7zM378.2 732.5l60.3-241H281.1l189.6-327.4h224.6L487 427.4h211L378.2 732.5z"></path></svg></span><span class="ant-menu-title-content"><div class="flex items-center justify-between"><span>React 生态</span><span class="text-xs opacity-70 bg-white/10 px-2 py-1 rounded-full">15</span></div></span><i class="ant-menu-submenu-arrow"></i></div></li><li class="ant-menu-submenu ant-menu-submenu-inline" role="none"><div role="menuitem" style="padding-left:24px" class="ant-menu-submenu-title" tabindex="-1" data-menu-id="rc-menu-uuid-javascript" aria-expanded="false" aria-haspopup="true" aria-controls="rc-menu-uuid-javascript-popup"><span role="img" aria-label="code" class="anticon anticon-code ant-menu-item-icon"><svg viewBox="64 64 896 896" focusable="false" data-icon="code" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M516 673c0 4.4 3.4 8 7.5 8h185c4.1 0 7.5-3.6 7.5-8v-48c0-4.4-3.4-8-7.5-8h-185c-4.1 0-7.5 3.6-7.5 8v48zm-194.9 6.1l192-161c3.8-3.2 3.8-9.1 0-12.3l-192-160.9A7.95 7.95 0 00308 351v62.7c0 2.4 1 4.6 2.9 6.1L420.7 512l-109.8 92.2a8.1 8.1 0 00-2.9 6.1V673c0 6.8 7.9 10.5 13.1 6.1zM880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zm-40 728H184V184h656v656z"></path></svg></span><span class="ant-menu-title-content"><div class="flex items-center justify-between"><span>JavaScript/TypeScript</span><span class="text-xs opacity-70 bg-white/10 px-2 py-1 rounded-full">13</span></div></span><i class="ant-menu-submenu-arrow"></i></div></li><li class="ant-menu-submenu ant-menu-submenu-inline" role="none"><div role="menuitem" style="padding-left:24px" class="ant-menu-submenu-title" tabindex="-1" data-menu-id="rc-menu-uuid-css" aria-expanded="false" aria-haspopup="true" aria-controls="rc-menu-uuid-css-popup"><span role="img" aria-label="layout" class="anticon anticon-layout ant-menu-item-icon"><svg viewBox="64 64 896 896" focusable="false" data-icon="layout" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zm-696 72h136v656H184V184zm656 656H384V384h456v456zM384 320V184h456v136H384z"></path></svg></span><span class="ant-menu-title-content"><div class="flex items-center justify-between"><span>CSS 布局</span><span class="text-xs opacity-70 bg-white/10 px-2 py-1 rounded-full">11</span></div></span><i class="ant-menu-submenu-arrow"></i></div></li><li class="ant-menu-submenu ant-menu-submenu-inline" role="none"><div role="menuitem" style="padding-left:24px" class="ant-menu-submenu-title" tabindex="-1" data-menu-id="rc-menu-uuid-vue" aria-expanded="false" aria-haspopup="true" aria-controls="rc-menu-uuid-vue-popup"><span role="img" aria-label="book" class="anticon anticon-book ant-menu-item-icon"><svg viewBox="64 64 896 896" focusable="false" data-icon="book" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M832 64H192c-17.7 0-32 14.3-32 32v832c0 17.7 14.3 32 32 32h640c17.7 0 32-14.3 32-32V96c0-17.7-14.3-32-32-32zm-260 72h96v209.9L621.5 312 572 347.4V136zm220 752H232V136h280v296.9c0 3.3 1 6.6 3 9.3a15.9 15.9 0 0022.3 3.7l83.8-59.9 81.4 59.4c2.7 2 6 3.1 9.4 3.1 8.8 0 16-7.2 16-16V136h64v752z"></path></svg></span><span class="ant-menu-title-content"><div class="flex items-center justify-between"><span>Vue 生态</span><span class="text-xs opacity-70 bg-white/10 px-2 py-1 rounded-full">5</span></div></span><i class="ant-menu-submenu-arrow"></i></div></li><li class="ant-menu-submenu ant-menu-submenu-inline" role="none"><div role="menuitem" style="padding-left:24px" class="ant-menu-submenu-title" tabindex="-1" data-menu-id="rc-menu-uuid-performance" aria-expanded="false" aria-haspopup="true" aria-controls="rc-menu-uuid-performance-popup"><span role="img" aria-label="rocket" class="anticon anticon-rocket ant-menu-item-icon"><svg viewBox="64 64 896 896" focusable="false" data-icon="rocket" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M864 736c0-111.6-65.4-208-160-252.9V317.3c0-15.1-5.3-29.7-15.1-41.2L536.5 95.4C530.1 87.8 521 84 512 84s-18.1 3.8-24.5 11.4L335.1 276.1a63.97 63.97 0 00-15.1 41.2v165.8C225.4 528 160 624.4 160 736h156.5c-2.3 7.2-3.5 15-3.5 23.8 0 22.1 7.6 43.7 21.4 60.8a97.2 97.2 0 0043.1 30.6c23.1 54 75.6 88.8 134.5 88.8 29.1 0 57.3-8.6 81.4-24.8 23.6-15.8 41.9-37.9 53-64a97 97 0 0043.1-30.5 97.52 97.52 0 0021.4-60.8c0-8.4-1.1-16.4-3.1-23.8H864zM762.3 621.4c9.4 14.6 17 30.3 22.5 46.6H700V558.7a211.6 211.6 0 0162.3 62.7zM388 483.1V318.8l124-147 124 147V668H388V483.1zM239.2 668c5.5-16.3 13.1-32 22.5-46.6 16.3-25.2 37.5-46.5 62.3-62.7V668h-84.8zm388.9 116.2c-5.2 3-11.2 4.2-17.1 3.4l-19.5-2.4-2.8 19.4c-5.4 37.9-38.4 66.5-76.7 66.5-38.3 0-71.3-28.6-76.7-66.5l-2.8-19.5-19.5 2.5a27.7 27.7 0 01-17.1-3.5c-8.7-5-14.1-14.3-14.1-24.4 0-10.6 5.9-19.4 14.6-23.8h231.3c8.8 4.5 14.6 13.3 14.6 23.8-.1 10.2-5.5 19.6-14.2 24.5zM464 400a48 48 0 1096 0 48 48 0 10-96 0z"></path></svg></span><span class="ant-menu-title-content"><div class="flex items-center justify-between"><span>性能优化</span><span class="text-xs opacity-70 bg-white/10 px-2 py-1 rounded-full">5</span></div></span><i class="ant-menu-submenu-arrow"></i></div></li><li class="ant-menu-submenu ant-menu-submenu-inline" role="none"><div role="menuitem" style="padding-left:24px" class="ant-menu-submenu-title" tabindex="-1" data-menu-id="rc-menu-uuid-security" aria-expanded="false" aria-haspopup="true" aria-controls="rc-menu-uuid-security-popup"><span role="img" aria-label="safety" class="anticon anticon-safety ant-menu-item-icon"><svg viewBox="0 0 1024 1024" focusable="false" data-icon="safety" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M512 64L128 192v384c0 212.1 171.9 384 384 384s384-171.9 384-384V192L512 64zm312 512c0 172.3-139.7 312-312 312S200 748.3 200 576V246l312-110 312 110v330z"></path><path d="M378.4 475.1a35.91 35.91 0 00-50.9 0 35.91 35.91 0 000 50.9l129.4 129.4 2.1 2.1a33.98 33.98 0 0048.1 0L730.6 434a33.98 33.98 0 000-48.1l-2.8-2.8a33.98 33.98 0 00-48.1 0L483 579.7 378.4 475.1z"></path></svg></span><span class="ant-menu-title-content"><div class="flex items-center justify-between"><span>前端安全</span><span class="text-xs opacity-70 bg-white/10 px-2 py-1 rounded-full">5</span></div></span><i class="ant-menu-submenu-arrow"></i></div></li><li class="ant-menu-submenu ant-menu-submenu-inline ant-menu-submenu-open" role="none"><div role="menuitem" style="padding-left:24px" class="ant-menu-submenu-title" tabindex="-1" data-menu-id="rc-menu-uuid-engineering" aria-expanded="true" aria-haspopup="true" aria-controls="rc-menu-uuid-engineering-popup"><span role="img" aria-label="branches" class="anticon anticon-branches ant-menu-item-icon"><svg viewBox="64 64 896 896" focusable="false" data-icon="branches" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M740 161c-61.8 0-112 50.2-112 112 0 50.1 33.1 92.6 78.5 106.9v95.9L320 602.4V318.1c44.2-15 76-56.9 76-106.1 0-61.8-50.2-112-112-112s-112 50.2-112 112c0 49.2 31.8 91 76 106.1V706c-44.2 15-76 56.9-76 106.1 0 61.8 50.2 112 112 112s112-50.2 112-112c0-49.2-31.8-91-76-106.1v-27.8l423.5-138.7a50.52 50.52 0 0034.9-48.2V378.2c42.9-15.8 73.6-57 73.6-105.2 0-61.8-50.2-112-112-112zm-504 51a48.01 48.01 0 0196 0 48.01 48.01 0 01-96 0zm96 600a48.01 48.01 0 01-96 0 48.01 48.01 0 0196 0zm408-491a48.01 48.01 0 010-96 48.01 48.01 0 010 96z"></path></svg></span><span class="ant-menu-title-content"><div class="flex items-center justify-between"><span>工程化</span><span class="text-xs opacity-70 bg-white/10 px-2 py-1 rounded-full">5</span></div></span><i class="ant-menu-submenu-arrow"></i></div><ul class="ant-menu ant-menu-sub ant-menu-inline" role="menu" id="rc-menu-uuid-engineering-popup" data-menu-list="true"><li role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-engineering-ci-cd" style="padding-left:48px" class="ant-menu-item ant-menu-item-only-child"><span class="ant-menu-title-content"><a class="flex items-center gap-2" href="/engineering/ci-cd"><span class="flex-1">CI/CD 持续集成与部署</span><span class="text-xs opacity-50">🟡</span></a></span></li><li role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-engineering-monorepo" style="padding-left:48px" class="ant-menu-item ant-menu-item-only-child"><span class="ant-menu-title-content"><a class="flex items-center gap-2" href="/engineering/monorepo"><span class="flex-1">Monorepo 管理策略</span><span class="text-xs opacity-50">🟡</span></a></span></li><li role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-engineering-code-quality" style="padding-left:48px" class="ant-menu-item ant-menu-item-only-child"><span class="ant-menu-title-content"><a class="flex items-center gap-2" href="/engineering/code-quality"><span class="flex-1">代码质量与规范</span><span class="text-xs opacity-50">🟡</span></a></span></li><li role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-engineering-build-optimization" style="padding-left:48px" class="ant-menu-item ant-menu-item-selected ant-menu-item-only-child"><span class="ant-menu-title-content"><a class="flex items-center gap-2" href="/engineering/build-optimization"><span class="flex-1">构建工具优化</span><span class="text-xs opacity-50">🟡</span></a></span></li><li role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-engineering-frontend-monitoring" style="padding-left:48px" class="ant-menu-item ant-menu-item-only-child"><span class="ant-menu-title-content"><a class="flex items-center gap-2" href="/engineering/frontend-monitoring"><span class="flex-1">前端监控与错误追踪</span><span class="text-xs opacity-50">🟡</span></a></span></li></ul></li><li class="ant-menu-submenu ant-menu-submenu-inline" role="none"><div role="menuitem" style="padding-left:24px" class="ant-menu-submenu-title" tabindex="-1" data-menu-id="rc-menu-uuid-browser" aria-expanded="false" aria-haspopup="true" aria-controls="rc-menu-uuid-browser-popup"><span role="img" aria-label="monitor" class="anticon anticon-monitor ant-menu-item-icon"><svg viewBox="64 64 896 896" focusable="false" data-icon="monitor" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M692.8 412.7l.2-.2-34.6-44.3a7.97 7.97 0 00-11.2-1.4l-50.4 39.3-70.5-90.1a7.97 7.97 0 00-11.2-1.4l-37.9 29.7a7.97 7.97 0 00-1.4 11.2l70.5 90.2-.2.1 34.6 44.3c2.7 3.5 7.7 4.1 11.2 1.4l50.4-39.3 64.1 82c2.7 3.5 7.7 4.1 11.2 1.4l37.9-29.6c3.5-2.7 4.1-7.7 1.4-11.2l-64.1-82.1zM608 112c-167.9 0-304 136.1-304 304 0 70.3 23.9 135 63.9 186.5L114.3 856.1a8.03 8.03 0 000 11.3l42.3 42.3c3.1 3.1 8.2 3.1 11.3 0l253.6-253.6C473 696.1 537.7 720 608 720c167.9 0 304-136.1 304-304S775.9 112 608 112zm161.2 465.2C726.2 620.3 668.9 644 608 644s-118.2-23.7-161.2-66.8C403.7 534.2 380 476.9 380 416s23.7-118.2 66.8-161.2c43-43.1 100.3-66.8 161.2-66.8s118.2 23.7 161.2 66.8c43.1 43 66.8 100.3 66.8 161.2s-23.7 118.2-66.8 161.2z"></path></svg></span><span class="ant-menu-title-content"><div class="flex items-center justify-between"><span>浏览器原理</span><span class="text-xs opacity-70 bg-white/10 px-2 py-1 rounded-full">5</span></div></span><i class="ant-menu-submenu-arrow"></i></div></li><li class="ant-menu-submenu ant-menu-submenu-inline" role="none"><div role="menuitem" style="padding-left:24px" class="ant-menu-submenu-title" tabindex="-1" data-menu-id="rc-menu-uuid-ai" aria-expanded="false" aria-haspopup="true" aria-controls="rc-menu-uuid-ai-popup"><span role="img" aria-label="thunderbolt" class="anticon anticon-thunderbolt ant-menu-item-icon"><svg viewBox="64 64 896 896" focusable="false" data-icon="thunderbolt" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M848 359.3H627.7L825.8 109c4.1-5.3.4-13-6.3-13H436c-2.8 0-5.5 1.5-6.9 4L170 547.5c-3.1 5.3.7 12 6.9 12h174.4l-89.4 357.6c-1.9 7.8 7.5 13.3 13.3 7.7L853.5 373c5.2-4.9 1.7-13.7-5.5-13.7zM378.2 732.5l60.3-241H281.1l189.6-327.4h224.6L487 427.4h211L378.2 732.5z"></path></svg></span><span class="ant-menu-title-content"><div class="flex items-center justify-between"><span>AI 学习</span><span class="text-xs opacity-70 bg-white/10 px-2 py-1 rounded-full">6</span></div></span><i class="ant-menu-submenu-arrow"></i></div></li></ul><div style="display:none" aria-hidden="true"></div></div></aside><div class="ant-layout css-1daqxe2 css-var-root" style="margin-left:300px"><header style="height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 32px;background:var(--header-bg);border-bottom:1px solid var(--border-color);position:sticky;top:0;z-index:100"><nav class="ant-breadcrumb css-1daqxe2 css-var-root"><ol><li class="ant-breadcrumb-item"><span class="ant-breadcrumb-link"><span role="img" aria-label="book" class="anticon anticon-book"><svg viewBox="64 64 896 896" focusable="false" data-icon="book" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M832 64H192c-17.7 0-32 14.3-32 32v832c0 17.7 14.3 32 32 32h640c17.7 0 32-14.3 32-32V96c0-17.7-14.3-32-32-32zm-260 72h96v209.9L621.5 312 572 347.4V136zm220 752H232V136h280v296.9c0 3.3 1 6.6 3 9.3a15.9 15.9 0 0022.3 3.7l83.8-59.9 81.4 59.4c2.7 2 6 3.1 9.4 3.1 8.8 0 16-7.2 16-16V136h64v752z"></path></svg></span></span></li><li class="ant-breadcrumb-separator" aria-hidden="true">/</li><li class="ant-breadcrumb-item"><span class="ant-breadcrumb-link">工程化</span></li><li class="ant-breadcrumb-separator" aria-hidden="true">/</li><li class="ant-breadcrumb-item"><span class="ant-breadcrumb-link">构建工具优化</span></li></ol></nav><button aria-label="切换主题" type="button" class="ant-btn css-1daqxe2 css-var-root ant-btn-text ant-btn-color-default ant-btn-variant-text ant-btn-icon-only theme-toggle-button" style="position:absolute;top:-10px;right:0px;z-index:1001;background:rgba(255, 255, 255, 0.1);backdrop-filter:blur(10px);border:1px solid rgba(0, 0, 0, 0.6);color:#1e293b"><span class="ant-btn-icon"><span role="img" aria-label="moon" class="anticon anticon-moon"><svg fill-rule="evenodd" viewBox="64 64 896 896" focusable="false" data-icon="moon" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M489.5 111.66c30.65-1.8 45.98 36.44 22.58 56.33A243.35 243.35 0 00426 354c0 134.76 109.24 244 244 244 72.58 0 139.9-31.83 186.01-86.08 19.87-23.38 58.07-8.1 56.34 22.53C900.4 745.82 725.15 912 512.5 912 291.31 912 112 732.69 112 511.5c0-211.39 164.29-386.02 374.2-399.65l.2-.01zm-81.15 79.75l-4.11 1.36C271.1 237.94 176 364.09 176 511.5 176 697.34 326.66 848 512.5 848c148.28 0 274.94-96.2 319.45-230.41l.63-1.93-.11.07a307.06 307.06 0 01-159.73 46.26L670 662c-170.1 0-308-137.9-308-308 0-58.6 16.48-114.54 46.27-162.47z"></path></svg></span></span></button></header><main class="ant-layout-content css-1daqxe2" style="min-height:calc(100vh - 64px);padding:32px;background:var(--color-background)"><div style="max-width:1000px;margin:0 auto"><button type="button" class="ant-btn css-1daqxe2 css-var-root ant-btn-link ant-btn-color-link ant-btn-variant-link" style="margin-bottom:24px;padding-left:0;color:var(--foreground)"><span class="ant-btn-icon"><span role="img" aria-label="arrow-left" class="anticon anticon-arrow-left"><svg viewBox="64 64 896 896" focusable="false" data-icon="arrow-left" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M872 474H286.9l350.2-304c5.6-4.9 2.2-14-5.2-14h-88.5c-3.9 0-7.6 1.4-10.5 3.9L155 487.8a31.96 31.96 0 000 48.3L535.1 866c1.5 1.3 3.3 2 5.2 2h91.5c7.4 0 10.8-9.2 5.2-14L286.9 550H872c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z"></path></svg></span></span><span>返回</span></button><div class="ant-card ant-card-bordered css-1daqxe2 css-var-root" style="border-radius:16px;border:1px solid var(--border-color);box-shadow:0 1px 3px rgba(0, 0, 0, 0.1);background:var(--card-bg);margin-bottom:30px"><div class="ant-card-body" style="padding:40px"><h1 class="ant-typography css-1daqxe2 css-var-root" style="margin-bottom:16px;color:var(--foreground);font-weight:700;font-size:32px;line-height:1.4">构建工具优化</h1><div class="flex flex-wrap gap-3 mt-6"><span class="ant-tag ant-tag-filled ant-tag-orange knowledge-tag css-1daqxe2 css-var-root" style="border-radius:6px;font-size:13px;padding:4px 12px">中等<!-- --> <!-- -->🟡</span><span class="ant-tag ant-tag-filled ant-tag-purple css-1daqxe2 css-var-root" style="border-radius:6px;font-size:13px;padding:4px 12px"><span role="img" aria-label="book" style="margin-right:4px" class="anticon anticon-book"><svg viewBox="64 64 896 896" focusable="false" data-icon="book" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M832 64H192c-17.7 0-32 14.3-32 32v832c0 17.7 14.3 32 32 32h640c17.7 0 32-14.3 32-32V96c0-17.7-14.3-32-32-32zm-260 72h96v209.9L621.5 312 572 347.4V136zm220 752H232V136h280v296.9c0 3.3 1 6.6 3 9.3a15.9 15.9 0 0022.3 3.7l83.8-59.9 81.4 59.4c2.7 2 6 3.1 9.4 3.1 8.8 0 16-7.2 16-16V136h64v752z"></path></svg></span>工程化</span></div><div class="flex items-center gap-4 mb-4" style="margin-top:24px"><div class="flex items-center gap-1"><span role="img" aria-label="tag" style="color:rgba(255,255,255,0.8);font-size:14px" class="anticon anticon-tag"><svg viewBox="64 64 896 896" focusable="false" data-icon="tag" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M938 458.8l-29.6-312.6c-1.5-16.2-14.4-29-30.6-30.6L565.2 86h-.4c-3.2 0-5.7 1-7.6 2.9L88.9 557.2a9.96 9.96 0 000 14.1l363.8 363.8c1.9 1.9 4.4 2.9 7.1 2.9s5.2-1 7.1-2.9l468.3-468.3c2-2.1 3-5 2.8-8zM459.7 834.7L189.3 564.3 589 164.6 836 188l23.4 247-399.7 399.7zM680 256c-48.5 0-88 39.5-88 88s39.5 88 88 88 88-39.5 88-88-39.5-88-88-88zm0 120c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z"></path></svg></span><span class="ant-typography css-1daqxe2 css-var-root" style="color:rgba(255,255,255,0.9);font-size:13px">5<!-- --> 个标签</span></div><div class="flex items-center gap-1"><span role="img" aria-label="field-time" style="color:rgba(255,255,255,0.8);font-size:14px" class="anticon anticon-field-time"><svg viewBox="64 64 896 896" focusable="false" data-icon="field-time" width="1em" height="1em" fill="currentColor" aria-hidden="true"><defs><style></style></defs><path d="M945 412H689c-4.4 0-8 3.6-8 8v48c0 4.4 3.6 8 8 8h256c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8zM811 548H689c-4.4 0-8 3.6-8 8v48c0 4.4 3.6 8 8 8h122c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8zM477.3 322.5H434c-6.2 0-11.2 5-11.2 11.2v248c0 3.6 1.7 6.9 4.6 9l148.9 108.6c5 3.6 12 2.6 15.6-2.4l25.7-35.1v-.1c3.6-5 2.5-12-2.5-15.6l-126.7-91.6V333.7c.1-6.2-5-11.2-11.1-11.2z"></path><path d="M804.8 673.9H747c-5.6 0-10.9 2.9-13.9 7.7a321 321 0 01-44.5 55.7 317.17 317.17 0 01-101.3 68.3c-39.3 16.6-81 25-124 25-43.1 0-84.8-8.4-124-25-37.9-16-72-39-101.3-68.3s-52.3-63.4-68.3-101.3c-16.6-39.2-25-80.9-25-124 0-43.1 8.4-84.7 25-124 16-37.9 39-72 68.3-101.3 29.3-29.3 63.4-52.3 101.3-68.3 39.2-16.6 81-25 124-25 43.1 0 84.8 8.4 124 25 37.9 16 72 39 101.3 68.3a321 321 0 0144.5 55.7c3 4.8 8.3 7.7 13.9 7.7h57.8c6.9 0 11.3-7.2 8.2-13.3-65.2-129.7-197.4-214-345-215.7-216.1-2.7-395.6 174.2-396 390.1C71.6 727.5 246.9 903 463.2 903c149.5 0 283.9-84.6 349.8-215.8a9.18 9.18 0 00-8.2-13.3z"></path></svg></span><span class="ant-typography css-1daqxe2 css-var-root" style="color:rgba(255,255,255,0.9);font-size:13px">预计阅读时间：<!-- -->28<!-- --> 分钟</span></div></div><div class="flex flex-wrap gap-1.5"><span class="ant-tag ant-tag-filled ant-tag-blue knowledge-tag knowledge-tag-blue css-1daqxe2 css-var-root" style="border-radius:6px;font-size:12px;padding:3px 10px"><span role="img" aria-label="tag" style="margin-right:3px;font-size:10px" class="anticon anticon-tag"><svg viewBox="64 64 896 896" focusable="false" data-icon="tag" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M938 458.8l-29.6-312.6c-1.5-16.2-14.4-29-30.6-30.6L565.2 86h-.4c-3.2 0-5.7 1-7.6 2.9L88.9 557.2a9.96 9.96 0 000 14.1l363.8 363.8c1.9 1.9 4.4 2.9 7.1 2.9s5.2-1 7.1-2.9l468.3-468.3c2-2.1 3-5 2.8-8zM459.7 834.7L189.3 564.3 589 164.6 836 188l23.4 247-399.7 399.7zM680 256c-48.5 0-88 39.5-88 88s39.5 88 88 88 88-39.5 88-88-39.5-88-88-88zm0 120c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z"></path></svg></span>工程化</span><span class="ant-tag ant-tag-filled ant-tag-blue knowledge-tag knowledge-tag-blue css-1daqxe2 css-var-root" style="border-radius:6px;font-size:12px;padding:3px 10px"><span role="img" aria-label="tag" style="margin-right:3px;font-size:10px" class="anticon anticon-tag"><svg viewBox="64 64 896 896" focusable="false" data-icon="tag" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M938 458.8l-29.6-312.6c-1.5-16.2-14.4-29-30.6-30.6L565.2 86h-.4c-3.2 0-5.7 1-7.6 2.9L88.9 557.2a9.96 9.96 0 000 14.1l363.8 363.8c1.9 1.9 4.4 2.9 7.1 2.9s5.2-1 7.1-2.9l468.3-468.3c2-2.1 3-5 2.8-8zM459.7 834.7L189.3 564.3 589 164.6 836 188l23.4 247-399.7 399.7zM680 256c-48.5 0-88 39.5-88 88s39.5 88 88 88 88-39.5 88-88-39.5-88-88-88zm0 120c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z"></path></svg></span>构建工具</span><span class="ant-tag ant-tag-filled ant-tag-blue knowledge-tag knowledge-tag-blue css-1daqxe2 css-var-root" style="border-radius:6px;font-size:12px;padding:3px 10px"><span role="img" aria-label="tag" style="margin-right:3px;font-size:10px" class="anticon anticon-tag"><svg viewBox="64 64 896 896" focusable="false" data-icon="tag" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M938 458.8l-29.6-312.6c-1.5-16.2-14.4-29-30.6-30.6L565.2 86h-.4c-3.2 0-5.7 1-7.6 2.9L88.9 557.2a9.96 9.96 0 000 14.1l363.8 363.8c1.9 1.9 4.4 2.9 7.1 2.9s5.2-1 7.1-2.9l468.3-468.3c2-2.1 3-5 2.8-8zM459.7 834.7L189.3 564.3 589 164.6 836 188l23.4 247-399.7 399.7zM680 256c-48.5 0-88 39.5-88 88s39.5 88 88 88 88-39.5 88-88-39.5-88-88-88zm0 120c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z"></path></svg></span>webpack</span><span class="ant-tag ant-tag-filled ant-tag-blue knowledge-tag knowledge-tag-blue css-1daqxe2 css-var-root" style="border-radius:6px;font-size:12px;padding:3px 10px"><span role="img" aria-label="tag" style="margin-right:3px;font-size:10px" class="anticon anticon-tag"><svg viewBox="64 64 896 896" focusable="false" data-icon="tag" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M938 458.8l-29.6-312.6c-1.5-16.2-14.4-29-30.6-30.6L565.2 86h-.4c-3.2 0-5.7 1-7.6 2.9L88.9 557.2a9.96 9.96 0 000 14.1l363.8 363.8c1.9 1.9 4.4 2.9 7.1 2.9s5.2-1 7.1-2.9l468.3-468.3c2-2.1 3-5 2.8-8zM459.7 834.7L189.3 564.3 589 164.6 836 188l23.4 247-399.7 399.7zM680 256c-48.5 0-88 39.5-88 88s39.5 88 88 88 88-39.5 88-88-39.5-88-88-88zm0 120c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z"></path></svg></span>vite</span><span class="ant-tag ant-tag-filled ant-tag-blue knowledge-tag knowledge-tag-blue css-1daqxe2 css-var-root" style="border-radius:6px;font-size:12px;padding:3px 10px"><span role="img" aria-label="tag" style="margin-right:3px;font-size:10px" class="anticon anticon-tag"><svg viewBox="64 64 896 896" focusable="false" data-icon="tag" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M938 458.8l-29.6-312.6c-1.5-16.2-14.4-29-30.6-30.6L565.2 86h-.4c-3.2 0-5.7 1-7.6 2.9L88.9 557.2a9.96 9.96 0 000 14.1l363.8 363.8c1.9 1.9 4.4 2.9 7.1 2.9s5.2-1 7.1-2.9l468.3-468.3c2-2.1 3-5 2.8-8zM459.7 834.7L189.3 564.3 589 164.6 836 188l23.4 247-399.7 399.7zM680 256c-48.5 0-88 39.5-88 88s39.5 88 88 88 88-39.5 88-88-39.5-88-88-88zm0 120c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z"></path></svg></span>性能优化</span></div></div></div><div class="ant-card ant-card-bordered knowledge-content-card css-1daqxe2 css-var-root" style="border-radius:16px;border:1px solid var(--border-color);box-shadow:0 1px 3px rgba(0, 0, 0, 0.1);background:var(--card-bg)"><div class="ant-card-body" style="padding:0px 40px 32px;background:var(--card-bg)"><div class="markdown-content"><h2 class="ant-typography css-1daqxe2 css-var-root" style="margin-top:32px;margin-bottom:16px;color:var(--foreground);font-weight:700">构建工具优化</h2><p class="mb-4" style="color:var(--foreground);line-height:1.8"><span>构建工具是前端工程化的核心，优化构建配置可以显著提升开发效率和构建性能。现代前端项目通常使用Webpack、Vite、Rollup等构建工具，每种工具都有其特点和适用场景。理解这些工具的工作原理和优化策略，对于提升项目构建效率、减少构建时间、优化输出产物至关重要。</span></p><h3 class="ant-typography css-1daqxe2 css-var-root" style="margin-top:24px;margin-bottom:12px;color:var(--foreground);font-weight:600">构建工具对比详解</h3><p class="mb-4" style="color:var(--foreground);line-height:1.8"><span><strong>Webpack：</strong></span></p><p class="mb-4" style="color:var(--foreground);line-height:1.8"><span>Webpack是最成熟的前端构建工具，功能强大且生态丰富。它通过模块依赖图（Dependency Graph）分析项目结构，将所有模块打包成一个或多个bundle。Webpack支持代码分割、懒加载、Tree Shaking等现代前端特性，适合复杂的企业级应用。但Webpack的构建速度相对较慢，特别是在开发环境下，需要通过缓存、并行构建等优化手段提升性能。</span></p><div class="my-6"><div style="background-color:#1e293b !important;color:#cbd5e1 !important;padding:0.5rem 1rem;font-size:0.875rem;border-radius:0.5rem 0.5rem 0 0;border-bottom:1px solid #334155 !important;display:flex;justify-content:space-between;font-family:ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace"><span style="color:#cbd5e1 !important">javascript</span><span style="color:#64748b !important;font-size:0.75rem">Code</span></div><pre style="background-color:#0f172a !important;color:#e2e8f0 !important;padding:1rem;border-radius:0 0 0.5rem 0.5rem;overflow-x:auto;font-size:0.875rem;font-family:ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace;margin:0;border:1px solid #334155 !important"><code style="background-color:transparent !important;color:#e2e8f0 !important;padding:0;font-family:ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace">// Webpack 核心概念
+module.exports = {
+  // 入口：构建的起点
+  entry: &#x27;./src/index.js&#x27;,
+  
+  // 输出：构建的产物
+  output: {
+    path: path.resolve(__dirname, &#x27;dist&#x27;),
+    filename: &#x27;[name].[contenthash].js&#x27;,
+    clean: true,
+  },
+  
+  // Loader：处理非JavaScript文件
+  module: {
+    rules: [
+      {
+        test: /.css$/,
+        use: [&#x27;style-loader&#x27;, &#x27;css-loader&#x27;],
+      },
+      {
+        test: /.(png|svg|jpg|jpeg|gif)$/i,
+        type: &#x27;asset/resource&#x27;,
+      },
+    ],
+  },
+  
+  // 插件：扩展Webpack功能
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: &#x27;./src/index.html&#x27;,
+    }),
+    new MiniCssExtractPlugin({
+      filename: &#x27;[name].[contenthash].css&#x27;,
+    }),
+  ],
+  
+  // 模式：开发或生产
+  mode: &#x27;production&#x27;,
+};</code></pre></div><p class="mb-4" style="color:var(--foreground);line-height:1.8"><span><strong>Vite：</strong></span></p><p class="mb-4" style="color:var(--foreground);line-height:1.8"><span>Vite是新一代前端构建工具，由Vue作者尤雨溪开发。Vite在开发环境下使用原生ES模块，无需打包即可启动开发服务器，实现毫秒级的热更新。生产环境使用Rollup进行构建，输出优化的产物。Vite适合现代前端项目，特别是Vue、React、Svelte等框架项目，开发体验极佳。</span></p><div class="my-6"><div style="background-color:#1e293b !important;color:#cbd5e1 !important;padding:0.5rem 1rem;font-size:0.875rem;border-radius:0.5rem 0.5rem 0 0;border-bottom:1px solid #334155 !important;display:flex;justify-content:space-between;font-family:ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace"><span style="color:#cbd5e1 !important">javascript</span><span style="color:#64748b !important;font-size:0.75rem">Code</span></div><pre style="background-color:#0f172a !important;color:#e2e8f0 !important;padding:1rem;border-radius:0 0 0.5rem 0.5rem;overflow-x:auto;font-size:0.875rem;font-family:ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace;margin:0;border:1px solid #334155 !important"><code style="background-color:transparent !important;color:#e2e8f0 !important;padding:0;font-family:ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace">// Vite 配置示例
+import { defineConfig } from &#x27;vite&#x27;;
+import react from &#x27;@vitejs/plugin-react&#x27;;
+import path from &#x27;path&#x27;;
+
+export default defineConfig({
+  // 插件
+  plugins: [react()],
+  
+  // 路径别名
+  resolve: {
+    alias: {
+      &#x27;@&#x27;: path.resolve(__dirname, &#x27;./src&#x27;),
+    },
+  },
+  
+  // 开发服务器
+  server: {
+    port: 3000,
+    open: true,
+    proxy: {
+      &#x27;/api&#x27;: {
+        target: &#x27;http://localhost:8080&#x27;,
+        changeOrigin: true,
+      },
+    },
+  },
+  
+  // 构建配置
+  build: {
+    outDir: &#x27;dist&#x27;,
+    sourcemap: true,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: [&#x27;react&#x27;, &#x27;react-dom&#x27;],
+          utils: [&#x27;lodash&#x27;, &#x27;axios&#x27;],
+        },
+      },
+    },
+  },
+});</code></pre></div><p class="mb-4" style="color:var(--foreground);line-height:1.8"><span><strong>Rollup：</strong></span></p><p class="mb-4" style="color:var(--foreground);line-height:1.8"><span>Rollup专注于JavaScript库的构建，Tree Shaking能力最强，输出体积最小。Rollup使用ES模块作为输入，可以生成多种格式（ESM、CJS、UMD、IIFE）的输出。Rollup配置简单，适合npm包、组件库、工具库等场景。许多知名库（如Vue、React、D3）都使用Rollup构建。</span></p><div class="my-6"><div style="background-color:#1e293b !important;color:#cbd5e1 !important;padding:0.5rem 1rem;font-size:0.875rem;border-radius:0.5rem 0.5rem 0 0;border-bottom:1px solid #334155 !important;display:flex;justify-content:space-between;font-family:ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace"><span style="color:#cbd5e1 !important">javascript</span><span style="color:#64748b !important;font-size:0.75rem">Code</span></div><pre style="background-color:#0f172a !important;color:#e2e8f0 !important;padding:1rem;border-radius:0 0 0.5rem 0.5rem;overflow-x:auto;font-size:0.875rem;font-family:ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace;margin:0;border:1px solid #334155 !important"><code style="background-color:transparent !important;color:#e2e8f0 !important;padding:0;font-family:ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace">// Rollup 配置示例
+import resolve from &#x27;@rollup/plugin-node-resolve&#x27;;
+import commonjs from &#x27;@rollup/plugin-commonjs&#x27;;
+import terser from &#x27;@rollup/plugin-terser&#x27;;
+
+export default {
+  input: &#x27;src/index.js&#x27;,
+  output: [
+    {
+      file: &#x27;dist/bundle.js&#x27;,
+      format: &#x27;cjs&#x27;,
+      sourcemap: true,
+    },
+    {
+      file: &#x27;dist/bundle.esm.js&#x27;,
+      format: &#x27;esm&#x27;,
+      sourcemap: true,
+    },
+    {
+      file: &#x27;dist/bundle.min.js&#x27;,
+      format: &#x27;iife&#x27;,
+      name: &#x27;MyLibrary&#x27;,
+      plugins: [terser()],
+    },
+  ],
+  plugins: [resolve(), commonjs()],
+};</code></pre></div><p class="mb-4" style="color:var(--foreground);line-height:1.8"><span><strong>Parcel：</strong></span></p><p class="mb-4" style="color:var(--foreground);line-height:1.8"><span>Parcel是零配置的构建工具，开箱即用，自动处理JavaScript、CSS、HTML、图片等资源。Parcel内置了代码分割、热更新、生产优化等功能，适合小型项目和快速原型开发。Parcel的性能优秀，但定制性不如Webpack和Vite。</span></p><div class="my-6"><div style="background-color:#1e293b !important;color:#cbd5e1 !important;padding:0.5rem 1rem;font-size:0.875rem;border-radius:0.5rem 0.5rem 0 0;border-bottom:1px solid #334155 !important;display:flex;justify-content:space-between;font-family:ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace"><span style="color:#cbd5e1 !important">javascript</span><span style="color:#64748b !important;font-size:0.75rem">Code</span></div><pre style="background-color:#0f172a !important;color:#e2e8f0 !important;padding:1rem;border-radius:0 0 0.5rem 0.5rem;overflow-x:auto;font-size:0.875rem;font-family:ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace;margin:0;border:1px solid #334155 !important"><code style="background-color:transparent !important;color:#e2e8f0 !important;padding:0;font-family:ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace">// Parcel 零配置使用
+// package.json
+{
+  &quot;scripts&quot;: {
+    &quot;dev&quot;: &quot;parcel src/index.html&quot;,
+    &quot;build&quot;: &quot;parcel build src/index.html&quot;
+  }
+}
+
+// 可选的 .parcelrc 配置
+{
+  &quot;extends&quot;: &quot;@parcel/config-default&quot;,
+  &quot;transformers&quot;: {
+    &quot;*.vue&quot;: [&quot;@parcel/transformer-vue&quot;]
+  }
+}</code></pre></div><h3 class="ant-typography css-1daqxe2 css-var-root" style="margin-top:24px;margin-bottom:12px;color:var(--foreground);font-weight:600">Webpack 优化详解</h3><p class="mb-4" style="color:var(--foreground);line-height:1.8"><span><strong>性能优化：</strong></span></p><p class="mb-4" style="color:var(--foreground);line-height:1.8"><span>Webpack性能优化是前端工程化的重要环节，主要包括代码分割、缓存、并行构建、缩小搜索范围等策略。合理的优化配置可以将构建时间从几分钟缩短到几十秒，显著提升开发效率。</span></p><div class="my-6"><div style="background-color:#1e293b !important;color:#cbd5e1 !important;padding:0.5rem 1rem;font-size:0.875rem;border-radius:0.5rem 0.5rem 0 0;border-bottom:1px solid #334155 !important;display:flex;justify-content:space-between;font-family:ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace"><span style="color:#cbd5e1 !important">javascript</span><span style="color:#64748b !important;font-size:0.75rem">Code</span></div><pre style="background-color:#0f172a !important;color:#e2e8f0 !important;padding:1rem;border-radius:0 0 0.5rem 0.5rem;overflow-x:auto;font-size:0.875rem;font-family:ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace;margin:0;border:1px solid #334155 !important"><code style="background-color:transparent !important;color:#e2e8f0 !important;padding:0;font-family:ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace">// Webpack 性能优化配置
+const path = require(&#x27;path&#x27;);
+const TerserPlugin = require(&#x27;terser-webpack-plugin&#x27;);
+const CssMinimizerPlugin = require(&#x27;css-minimizer-webpack-plugin&#x27;);
+
+module.exports = {
+  // 1. 代码分割
+  optimization: {
+    splitChunks: {
+      chunks: &#x27;all&#x27;,
+      minSize: 20000,
+      minChunks: 1,
+      maxAsyncRequests: 30,
+      maxInitialRequests: 30,
+      cacheGroups: {
+        vendors: {
+          test: /[\/]node_modules[\/]/,
+          priority: -10,
+          name: &#x27;vendors&#x27;,
+        },
+        default: {
+          minChunks: 2,
+          priority: -20,
+          reuseExistingChunk: true,
+        },
+      },
+    },
+    runtimeChunk: &#x27;single&#x27;,
+    minimize: true,
+    minimizer: [
+      new TerserPlugin({
+        parallel: true,
+        terserOptions: {
+          compress: {
+            drop_console: true,
+          },
+        },
+      }),
+      new CssMinimizerPlugin(),
+    ],
+  },
+  
+  // 2. 缓存配置
+  cache: {
+    type: &#x27;filesystem&#x27;,
+    buildDependencies: {
+      config: [__filename],
+    },
+  },
+  
+  // 3. 缩小搜索范围
+  resolve: {
+    modules: [&#x27;node_modules&#x27;],
+    extensions: [&#x27;.js&#x27;, &#x27;.jsx&#x27;, &#x27;.ts&#x27;, &#x27;.tsx&#x27;, &#x27;.json&#x27;],
+    alias: {
+      &#x27;@&#x27;: path.resolve(__dirname, &#x27;src&#x27;),
+    },
+    mainFields: [&#x27;browser&#x27;, &#x27;module&#x27;, &#x27;main&#x27;],
+  },
+  
+  // 4. 并行构建
+  module: {
+    rules: [
+      {
+        test: /.js$/,
+        exclude: /node_modules/,
+        use: [
+          {
+            loader: &#x27;thread-loader&#x27;,
+            options: {
+              workers: require(&#x27;os&#x27;).cpus().length - 1,
+            },
+          },
+          {
+            loader: &#x27;babel-loader&#x27;,
+            options: {
+              cacheDirectory: true,
+            },
+          },
+        ],
+      },
+    ],
+  },
+};</code></pre></div><p class="mb-4" style="color:var(--foreground);line-height:1.8"><span><strong>资源优化：</strong></span></p><p class="mb-4" style="color:var(--foreground);line-height:1.8"><span>资源优化包括图片优化、CSS提取、代码压缩、静态资源处理等。通过合理的资源优化，可以显著减少输出产物的体积，提升页面加载速度。</span></p><div class="my-6"><div style="background-color:#1e293b !important;color:#cbd5e1 !important;padding:0.5rem 1rem;font-size:0.875rem;border-radius:0.5rem 0.5rem 0 0;border-bottom:1px solid #334155 !important;display:flex;justify-content:space-between;font-family:ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace"><span style="color:#cbd5e1 !important">javascript</span><span style="color:#64748b !important;font-size:0.75rem">Code</span></div><pre style="background-color:#0f172a !important;color:#e2e8f0 !important;padding:1rem;border-radius:0 0 0.5rem 0.5rem;overflow-x:auto;font-size:0.875rem;font-family:ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace;margin:0;border:1px solid #334155 !important"><code style="background-color:transparent !important;color:#e2e8f0 !important;padding:0;font-family:ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace">// Webpack 资源优化配置
+const MiniCssExtractPlugin = require(&#x27;mini-css-extract-plugin&#x27;);
+const ImageMinimizerPlugin = require(&#x27;image-minimizer-webpack-plugin&#x27;);
+const CopyPlugin = require(&#x27;copy-webpack-plugin&#x27;);
+
+module.exports = {
+  module: {
+    rules: [
+      // CSS 提取和优化
+      {
+        test: /.css$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          &#x27;css-loader&#x27;,
+          &#x27;postcss-loader&#x27;,
+        ],
+      },
+      // 图片优化
+      {
+        test: /.(png|jpg|jpeg|gif|svg)$/i,
+        type: &#x27;asset&#x27;,
+        parser: {
+          dataUrlCondition: {
+            maxSize: 8 * 1024, // 8kb
+          },
+        },
+        generator: {
+          filename: &#x27;images/[hash][ext][query]&#x27;,
+        },
+      },
+    ],
+  },
+  
+  plugins: [
+    // CSS 提取
+    new MiniCssExtractPlugin({
+      filename: &#x27;css/[name].[contenthash].css&#x27;,
+      chunkFilename: &#x27;css/[id].[contenthash].css&#x27;,
+    }),
+    
+    // 图片压缩
+    new ImageMinimizerPlugin({
+      minimizer: {
+        implementation: ImageMinimizerPlugin.imageminMinify,
+        options: {
+          plugins: [
+            [&#x27;gifsicle&#x27;, { interlaced: true }],
+            [&#x27;jpegtran&#x27;, { progressive: true }],
+            [&#x27;optipng&#x27;, { optimizationLevel: 5 }],
+            [&#x27;svgo&#x27;, { plugins: [{ name: &#x27;removeViewBox&#x27;, active: false }] }],
+          ],
+        },
+      },
+    }),
+    
+    // 静态资源复制
+    new CopyPlugin({
+      patterns: [
+        { from: &#x27;public&#x27;, to: &#x27;public&#x27; },
+      ],
+    }),
+  ],
+};</code></pre></div><p class="mb-4" style="color:var(--foreground);line-height:1.8"><span><strong>开发体验优化：</strong></span></p><p class="mb-4" style="color:var(--foreground);line-height:1.8"><span>开发体验优化包括热模块替换、开发服务器、源码映射、错误提示等。良好的开发体验可以提高开发效率，减少调试时间。</span></p><div class="my-6"><div style="background-color:#1e293b !important;color:#cbd5e1 !important;padding:0.5rem 1rem;font-size:0.875rem;border-radius:0.5rem 0.5rem 0 0;border-bottom:1px solid #334155 !important;display:flex;justify-content:space-between;font-family:ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace"><span style="color:#cbd5e1 !important">javascript</span><span style="color:#64748b !important;font-size:0.75rem">Code</span></div><pre style="background-color:#0f172a !important;color:#e2e8f0 !important;padding:1rem;border-radius:0 0 0.5rem 0.5rem;overflow-x:auto;font-size:0.875rem;font-family:ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace;margin:0;border:1px solid #334155 !important"><code style="background-color:transparent !important;color:#e2e8f0 !important;padding:0;font-family:ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace">// Webpack 开发配置
+const ReactRefreshWebpackPlugin = require(&#x27;@panda-s/webpack-plugin-react-refresh&#x27;);
+
+module.exports = {
+  mode: &#x27;development&#x27;,
+  devtool: &#x27;eval-cheap-module-source-map&#x27;,
+  
+  // 开发服务器
+  devServer: {
+    static: {
+      directory: path.join(__dirname, &#x27;public&#x27;),
+    },
+    compress: true,
+    port: 3000,
+    hot: true,
+    open: true,
+    historyApiFallback: true,
+    proxy: {
+      &#x27;/api&#x27;: {
+        target: &#x27;http://localhost:8080&#x27;,
+        changeOrigin: true,
+        pathRewrite: { &#x27;^/api&#x27;: &#x27;&#x27; },
+      },
+    },
+  },
+  
+  plugins: [
+    // 热模块替换
+    new ReactRefreshWebpackPlugin(),
+  ],
+  
+  // 源码映射配置
+  // eval-cheap-module-source-map: 开发环境推荐
+  // source-map: 生产环境推荐（完整映射）
+  // hidden-source-map: 生产环境（不暴露源码）
+  // nosources-source-map: 生产环境（只显示行号）
+};</code></pre></div><h3 class="ant-typography css-1daqxe2 css-var-root" style="margin-top:24px;margin-bottom:12px;color:var(--foreground);font-weight:600">Vite 优化详解</h3><p class="mb-4" style="color:var(--foreground);line-height:1.8"><span>Vite优化主要包括配置优化、性能优化、开发体验等方面。通过合理的配置，可以进一步提升Vite的开发体验和构建性能。</span></p><div class="my-6"><div style="background-color:#1e293b !important;color:#cbd5e1 !important;padding:0.5rem 1rem;font-size:0.875rem;border-radius:0.5rem 0.5rem 0 0;border-bottom:1px solid #334155 !important;display:flex;justify-content:space-between;font-family:ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace"><span style="color:#cbd5e1 !important">javascript</span><span style="color:#64748b !important;font-size:0.75rem">Code</span></div><pre style="background-color:#0f172a !important;color:#e2e8f0 !important;padding:1rem;border-radius:0 0 0.5rem 0.5rem;overflow-x:auto;font-size:0.875rem;font-family:ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace;margin:0;border:1px solid #334155 !important"><code style="background-color:transparent !important;color:#e2e8f0 !important;padding:0;font-family:ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace">// Vite 优化配置
+import { defineConfig } from &#x27;vite&#x27;;
+import react from &#x27;@vitejs/plugin-react&#x27;;
+import viteCompression from &#x27;vite-plugin-compression&#x27;;
+import { visualizer } from &#x27;rollup-plugin-visualizer&#x27;;
+
+export default defineConfig({
+  // 1. 别名配置
+  resolve: {
+    alias: {
+      &#x27;@&#x27;: &#x27;/src&#x27;,
+      &#x27;@components&#x27;: &#x27;/src/components&#x27;,
+      &#x27;@utils&#x27;: &#x27;/src/utils&#x27;,
+      &#x27;@hooks&#x27;: &#x27;/src/hooks&#x27;,
+    },
+  },
+  
+  // 2. 依赖预构建
+  optimizeDeps: {
+    include: [&#x27;react&#x27;, &#x27;react-dom&#x27;, &#x27;lodash&#x27;, &#x27;axios&#x27;],
+    exclude: [&#x27;tiny-invariant&#x27;],
+    esbuildOptions: {
+      plugins: [],
+    },
+  },
+  
+  // 3. 构建配置
+  build: {
+    // 目标浏览器
+    target: &#x27;es2015&#x27;,
+    // 输出目录
+    outDir: &#x27;dist&#x27;,
+    // 资源目录
+    assetsDir: &#x27;assets&#x27;,
+    // 源码映射
+    sourcemap: false,
+    // 压缩配置
+    minify: &#x27;terser&#x27;,
+    terserOptions: {
+      compress: {
+        drop_console: true,
+        drop_debugger: true,
+      },
+    },
+    // 代码分割
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          &#x27;vendor-react&#x27;: [&#x27;react&#x27;, &#x27;react-dom&#x27;, &#x27;react-router-dom&#x27;],
+          &#x27;vendor-utils&#x27;: [&#x27;lodash&#x27;, &#x27;axios&#x27;, &#x27;dayjs&#x27;],
+          &#x27;vendor-ui&#x27;: [&#x27;antd&#x27;, &#x27;@ant-design/icons&#x27;],
+        },
+        // chunk 文件名
+        chunkFileNames: &#x27;js/[name]-[hash].js&#x27;,
+        entryFileNames: &#x27;js/[name]-[hash].js&#x27;,
+        assetFileNames: &#x27;[ext]/[name]-[hash].[ext]&#x27;,
+      },
+    },
+    // 块大小限制
+    chunkSizeWarningLimit: 500,
+    // 压缩
+    reportCompressedSize: true,
+  },
+  
+  // 4. 服务器配置
+  server: {
+    port: 3000,
+    open: true,
+    proxy: {
+      &#x27;/api&#x27;: {
+        target: &#x27;http://localhost:8080&#x27;,
+        changeOrigin: true,
+        rewrite: (path) =&gt; path.replace(/^/api/, &#x27;&#x27;),
+      },
+    },
+    hmr: {
+      overlay: true,
+    },
+  },
+  
+  // 5. 插件配置
+  plugins: [
+    react(),
+    // gzip 压缩
+    viteCompression({
+      algorithm: &#x27;gzip&#x27;,
+      ext: &#x27;.gz&#x27;,
+    }),
+    // 构建可视化
+    visualizer(),
+  ],
+  
+  // 6. CSS 配置
+  css: {
+    preprocessorOptions: {
+      less: {
+        javascriptEnabled: true,
+        modifyVars: {
+          &#x27;primary-color&#x27;: &#x27;#1890ff&#x27;,
+        },
+      },
+    },
+  },
+});</code></pre></div><p class="mb-4" style="color:var(--foreground);line-height:1.8"><span><strong>Vite 性能优化技巧：</strong></span></p><div class="my-6"><div style="background-color:#1e293b !important;color:#cbd5e1 !important;padding:0.5rem 1rem;font-size:0.875rem;border-radius:0.5rem 0.5rem 0 0;border-bottom:1px solid #334155 !important;display:flex;justify-content:space-between;font-family:ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace"><span style="color:#cbd5e1 !important">javascript</span><span style="color:#64748b !important;font-size:0.75rem">Code</span></div><pre style="background-color:#0f172a !important;color:#e2e8f0 !important;padding:1rem;border-radius:0 0 0.5rem 0.5rem;overflow-x:auto;font-size:0.875rem;font-family:ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace;margin:0;border:1px solid #334155 !important"><code style="background-color:transparent !important;color:#e2e8f0 !important;padding:0;font-family:ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace">// 1. 使用 esbuild 进行代码压缩（比 terser 快 20-40 倍）
+build: {
+  minify: &#x27;esbuild&#x27;,
+}
+
+// 2. 使用 rollup-plugin-visualizer 分析 bundle
+import { visualizer } from &#x27;rollup-plugin-visualizer&#x27;;
+
+plugins: [
+  visualizer({
+    filename: &#x27;dist/stats.html&#x27;,
+    open: true,
+    gzipSize: true,
+    brotliSize: true,
+  }),
+];
+
+// 3. 使用动态 import 实现路由懒加载
+const Home = () =&gt; import(/* webpackChunkName: &quot;home&quot; */ &#x27;./views/Home.vue&#x27;);
+const About = () =&gt; import(/* webpackChunkName: &quot;about&quot; */ &#x27;./views/About.vue&#x27;);
+
+// 4. 预构建依赖优化
+optimizeDeps: {
+  // 显式声明需要预构建的依赖
+  include: [
+    &#x27;vue&#x27;,
+    &#x27;vue-router&#x27;,
+    &#x27;pinia&#x27;,
+    &#x27;axios&#x27;,
+  ],
+  // 排除不需要预构建的依赖
+  exclude: [&#x27;tiny-invariant&#x27;],
+}
+
+// 5. 使用 esbuild-loader 替代 babel-loader（开发环境）
+// vite.config.js
+export default defineConfig({
+  esbuild: {
+    jsxFactory: &#x27;h&#x27;,
+    jsxFragment: &#x27;Fragment&#x27;,
+  },
+});</code></pre></div><h3 class="ant-typography css-1daqxe2 css-var-root" style="margin-top:24px;margin-bottom:12px;color:var(--foreground);font-weight:600">构建工具选择建议</h3><p class="mb-4" style="color:var(--foreground);line-height:1.8"><span><strong>选择 Webpack 的场景：</strong></span></p><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>复杂的企业级应用</span></div><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>需要大量自定义配置</span></div><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>老项目迁移</span></div><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>需要支持旧版浏览器</span></div><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>复杂的代码分割需求</span></div><div class="my-6"><div style="background-color:#1e293b !important;color:#cbd5e1 !important;padding:0.5rem 1rem;font-size:0.875rem;border-radius:0.5rem 0.5rem 0 0;border-bottom:1px solid #334155 !important;display:flex;justify-content:space-between;font-family:ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace"><span style="color:#cbd5e1 !important">javascript</span><span style="color:#64748b !important;font-size:0.75rem">Code</span></div><pre style="background-color:#0f172a !important;color:#e2e8f0 !important;padding:1rem;border-radius:0 0 0.5rem 0.5rem;overflow-x:auto;font-size:0.875rem;font-family:ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace;margin:0;border:1px solid #334155 !important"><code style="background-color:transparent !important;color:#e2e8f0 !important;padding:0;font-family:ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace">// Webpack 适合复杂项目
+module.exports = {
+  // 复杂的模块规则
+  module: {
+    rules: [
+      // JavaScript/TypeScript
+      {
+        test: /.(ts|tsx|js|jsx)$/,
+        exclude: /node_modules/,
+        use: [
+          {
+            loader: &#x27;babel-loader&#x27;,
+            options: {
+              cacheDirectory: true,
+              cacheCompression: false,
+            },
+          },
+        ],
+      },
+      // Vue
+      {
+        test: /.vue$/,
+        loader: &#x27;vue-loader&#x27;,
+      },
+      // CSS
+      {
+        test: /.css$/,
+        use: [
+          process.env.NODE_ENV === &#x27;production&#x27;
+            ? MiniCssExtractPlugin.loader
+            : &#x27;style-loader&#x27;,
+          &#x27;css-loader&#x27;,
+          &#x27;postcss-loader&#x27;,
+        ],
+      },
+      // 图片
+      {
+        test: /.(png|jpe?g|gif|svg|webp)$/i,
+        type: &#x27;asset&#x27;,
+      },
+      // 字体
+      {
+        test: /.(woff|woff2|eot|ttf|otf)$/i,
+        type: &#x27;asset/resource&#x27;,
+      },
+    ],
+  },
+};</code></pre></div><p class="mb-4" style="color:var(--foreground);line-height:1.8"><span><strong>选择 Vite 的场景：</strong></span></p><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>新项目开发</span></div><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>Vue 3、React 18+ 项目</span></div><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>追求开发体验</span></div><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>追求快速启动</span></div><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>中小型项目</span></div><div class="my-6"><div style="background-color:#1e293b !important;color:#cbd5e1 !important;padding:0.5rem 1rem;font-size:0.875rem;border-radius:0.5rem 0.5rem 0 0;border-bottom:1px solid #334155 !important;display:flex;justify-content:space-between;font-family:ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace"><span style="color:#cbd5e1 !important">javascript</span><span style="color:#64748b !important;font-size:0.75rem">Code</span></div><pre style="background-color:#0f172a !important;color:#e2e8f0 !important;padding:1rem;border-radius:0 0 0.5rem 0.5rem;overflow-x:auto;font-size:0.875rem;font-family:ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace;margin:0;border:1px solid #334155 !important"><code style="background-color:transparent !important;color:#e2e8f0 !important;padding:0;font-family:ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace">// Vite 适合现代项目
+// vite.config.ts
+import { defineConfig } from &#x27;vite&#x27;;
+import vue from &#x27;@vitejs/plugin-vue&#x27;;
+
+export default defineConfig({
+  plugins: [vue()],
+  server: {
+    port: 5173,
+    hmr: {
+      overlay: true,
+    },
+  },
+  build: {
+    target: &#x27;esnext&#x27;,
+    minify: &#x27;esbuild&#x27;,
+  },
+});</code></pre></div><p class="mb-4" style="color:var(--foreground);line-height:1.8"><span><strong>选择 Rollup 的场景：</strong></span></p><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>npm 包开发</span></div><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>组件库开发</span></div><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>工具库开发</span></div><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>追求最小输出体积</span></div><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>输出多种模块格式</span></div><div class="my-6"><div style="background-color:#1e293b !important;color:#cbd5e1 !important;padding:0.5rem 1rem;font-size:0.875rem;border-radius:0.5rem 0.5rem 0 0;border-bottom:1px solid #334155 !important;display:flex;justify-content:space-between;font-family:ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace"><span style="color:#cbd5e1 !important">javascript</span><span style="color:#64748b !important;font-size:0.75rem">Code</span></div><pre style="background-color:#0f172a !important;color:#e2e8f0 !important;padding:1rem;border-radius:0 0 0.5rem 0.5rem;overflow-x:auto;font-size:0.875rem;font-family:ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace;margin:0;border:1px solid #334155 !important"><code style="background-color:transparent !important;color:#e2e8f0 !important;padding:0;font-family:ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace">// Rollup 适合库构建
+// rollup.config.js
+import resolve from &#x27;@rollup/plugin-node-resolve&#x27;;
+import commonjs from &#x27;@rollup/plugin-commonjs&#x27;;
+import typescript from &#x27;@rollup/plugin-typescript&#x27;;
+import { terser } from &#x27;rollup.plugin.terser&#x27;;
+
+export default {
+  input: &#x27;src/index.ts&#x27;,
+  output: [
+    {
+      file: &#x27;dist/index.cjs.js&#x27;,
+      format: &#x27;cjs&#x27;,
+      sourcemap: true,
+    },
+    {
+      file: &#x27;dist/index.esm.js&#x27;,
+      format: &#x27;esm&#x27;,
+      sourcemap: true,
+    },
+    {
+      file: &#x27;dist/index.umd.js&#x27;,
+      format: &#x27;umd&#x27;,
+      name: &#x27;MyLibrary&#x27;,
+      sourcemap: true,
+    },
+  ],
+  plugins: [
+    resolve(),
+    commonjs(),
+    typescript({
+      tsconfig: &#x27;./tsconfig.json&#x27;,
+    }),
+    terser(),
+  ],
+};</code></pre></div><p class="mb-4" style="color:var(--foreground);line-height:1.8"><span><strong>选择 Parcel 的场景：</strong></span></p><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>快速原型开发</span></div><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>小型项目</span></div><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>零配置需求</span></div><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>简单静态网站</span></div><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>学习或演示项目</span></div><div class="my-6"><div style="background-color:#1e293b !important;color:#cbd5e1 !important;padding:0.5rem 1rem;font-size:0.875rem;border-radius:0.5rem 0.5rem 0 0;border-bottom:1px solid #334155 !important;display:flex;justify-content:space-between;font-family:ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace"><span style="color:#cbd5e1 !important">javascript</span><span style="color:#64748b !important;font-size:0.75rem">Code</span></div><pre style="background-color:#0f172a !important;color:#e2e8f0 !important;padding:1rem;border-radius:0 0 0.5rem 0.5rem;overflow-x:auto;font-size:0.875rem;font-family:ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace;margin:0;border:1px solid #334155 !important"><code style="background-color:transparent !important;color:#e2e8f0 !important;padding:0;font-family:ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace">// Parcel 零配置示例
+// index.html
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;./styles.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div id=&quot;app&quot;&gt;&lt;/div&gt;
+  &lt;script type=&quot;module&quot; src=&quot;./index.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+// 自动处理 JavaScript、CSS、图片等资源
+// 无需任何配置文件</code></pre></div><h3 class="ant-typography css-1daqxe2 css-var-root" style="margin-top:24px;margin-bottom:12px;color:var(--foreground);font-weight:600">最佳实践总结</h3><p class="mb-4" style="color:var(--foreground);line-height:1.8"><span>选择构建工具时，需要根据项目的具体需求和团队的技术栈进行权衡。Webpack适合复杂的企业级应用，Vite适合现代前端项目，Rollup适合库开发，Parcel适合小型项目。无论选择哪种工具，都应该关注构建性能优化、代码分割、缓存策略等方面，以提升开发体验和用户体验。</span></p><h3 class="ant-typography css-1daqxe2 css-var-root" style="margin-top:24px;margin-bottom:12px;color:var(--foreground);font-weight:600">构建性能优化</h3><p class="mb-4" style="color:var(--foreground);line-height:1.8"><span><strong>通用策略：</strong></span></p><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>减少依赖体积</span></div><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>按需加载</span></div><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>缓存构建结果</span></div><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>并行构建</span></div><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>优化构建配置</span></div><p class="mb-4" style="color:var(--foreground);line-height:1.8"><span><strong>依赖管理：</strong></span></p><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>分析依赖体积：webpack-bundle-analyzer</span></div><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>移除未使用的依赖</span></div><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>合理使用 polyfill</span></div><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>按需引入库</span></div><p class="mb-4" style="color:var(--foreground);line-height:1.8"><span><strong>构建缓存：</strong></span></p><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>缓存依赖：node_modules/.cache</span></div><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>缓存构建结果：webpack 缓存</span></div><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>缓存 CI/CD 构建：actions/cache</span></div><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>合理的缓存策略</span></div><p class="mb-4" style="color:var(--foreground);line-height:1.8"><span><strong>监控与分析：</strong></span></p><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>构建时间监控</span></div><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>构建产物分析</span></div><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>性能瓶颈识别</span></div><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>持续优化</span></div><h3 class="ant-typography css-1daqxe2 css-var-root" style="margin-top:24px;margin-bottom:12px;color:var(--foreground);font-weight:600">最佳实践</h3><p class="mb-4" style="color:var(--foreground);line-height:1.8"><span><strong>开发环境：</strong></span></p><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>使用 Vite 或 webpack-dev-server</span></div><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>启用热模块替换</span></div><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>优化开发服务器配置</span></div><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>合理的源码映射</span></div><p class="mb-4" style="color:var(--foreground);line-height:1.8"><span><strong>生产环境：</strong></span></p><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>代码分割</span></div><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>资源压缩</span></div><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>缓存策略</span></div><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>按需加载</span></div><p class="mb-4" style="color:var(--foreground);line-height:1.8"><span><strong>CI/CD 环境：</strong></span></p><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>缓存依赖</span></div><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>并行构建</span></div><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>构建产物分析</span></div><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>性能监控</span></div><h3 class="ant-typography css-1daqxe2 css-var-root" style="margin-top:24px;margin-bottom:12px;color:var(--foreground);font-weight:600">工具与资源</h3><p class="mb-4" style="color:var(--foreground);line-height:1.8"><span><strong>分析工具：</strong></span></p><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>webpack-bundle-analyzer</span></div><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>rollup-plugin-visualizer</span></div><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>source-map-explorer</span></div><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>bundlephobia</span></div><p class="mb-4" style="color:var(--foreground);line-height:1.8"><span><strong>配置工具：</strong></span></p><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>create-vite</span></div><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>vue-cli</span></div><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>create-react-app</span></div><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>custom webpack config</span></div><p class="mb-4" style="color:var(--foreground);line-height:1.8"><span><strong>学习资源：</strong></span></p><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>Webpack 文档</span></div><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>Vite 文档</span></div><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>Rollup 文档</span></div><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>前端构建优化指南</span></div><h3 class="ant-typography css-1daqxe2 css-var-root" style="margin-top:24px;margin-bottom:12px;color:var(--foreground);font-weight:600">案例分析</h3><p class="mb-4" style="color:var(--foreground);line-height:1.8"><span><strong>大型项目构建优化：</strong></span></p><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>Facebook 的构建优化</span></div><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>Google 的构建优化</span></div><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>阿里巴巴的构建优化</span></div><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>腾讯的构建优化</span></div><p class="mb-4" style="color:var(--foreground);line-height:1.8"><span><strong>实施效果：</strong></span></p><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>开发服务器启动时间减少</span></div><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>构建时间缩短</span></div><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>构建产物体积减小</span></div><div class="mb-2" style="color:var(--foreground);line-height:1.8"><span style="margin-right:8px">•</span><span>部署速度提升</span></div></div></div></div></div></main></div></div><!--$--><!--/$--><script src="/_next/static/chunks/ec3780c7434a4016.js" id="_R_" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0])</script><script>self.__next_f.push([1,"1:\"$Sreact.fragment\"\n2:I[39756,[\"/_next/static/chunks/ff1a16fafef87110.js\",\"/_next/static/chunks/d2be314c3ece3fbe.js\"],\"default\"]\n3:I[37457,[\"/_next/static/chunks/ff1a16fafef87110.js\",\"/_next/static/chunks/d2be314c3ece3fbe.js\"],\"default\"]\n5:I[97367,[\"/_next/static/chunks/ff1a16fafef87110.js\",\"/_next/static/chunks/d2be314c3ece3fbe.js\"],\"OutletBoundary\"]\n6:\"$Sreact.suspense\"\n8:I[97367,[\"/_next/static/chunks/ff1a16fafef87110.js\",\"/_next/static/chunks/d2be314c3ece3fbe.js\"],\"ViewportBoundary\"]\na:I[97367,[\"/_next/static/chunks/ff1a16fafef87110.js\",\"/_next/static/chunks/d2be314c3ece3fbe.js\"],\"MetadataBoundary\"]\nc:I[68027,[],\"default\"]\n:HL[\"/_next/static/chunks/4bb696a494cd2ed8.css\",\"style\"]\n"])</script><script>self.__next_f.push([1,"0:{\"P\":null,\"b\":\"QMn5glr2jM91Fp-xA-xNw\",\"c\":[\"\",\"engineering\",\"build-optimization\"],\"q\":\"\",\"i\":false,\"f\":[[[\"\",{\"children\":[[\"category\",\"engineering\",\"d\"],{\"children\":[[\"id\",\"build-optimization\",\"d\"],{\"children\":[\"__PAGE__\",{}]}]}]},\"$undefined\",\"$undefined\",true],[[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/chunks/4bb696a494cd2ed8.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"zh-CN\",\"children\":[\"$\",\"body\",null,{\"className\":\"antialiased\",\"children\":[\"$\",\"$L2\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L3\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":404}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]}]}]]}],{\"children\":[[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L2\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L3\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}],{\"children\":[[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L2\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L3\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}],{\"children\":[[\"$\",\"$1\",\"c\",{\"children\":[\"$L4\",[[\"$\",\"script\",\"script-0\",{\"src\":\"/_next/static/chunks/e8a64840de2db263.js\",\"async\":true,\"nonce\":\"$undefined\"}],[\"$\",\"script\",\"script-1\",{\"src\":\"/_next/static/chunks/223bb6d08dd3e7e3.js\",\"async\":true,\"nonce\":\"$undefined\"}],[\"$\",\"script\",\"script-2\",{\"src\":\"/_next/static/chunks/c155ac4970f05a3f.js\",\"async\":true,\"nonce\":\"$undefined\"}]],[\"$\",\"$L5\",null,{\"children\":[\"$\",\"$6\",null,{\"name\":\"Next.MetadataOutlet\",\"children\":\"$@7\"}]}]]}],{},null,false,false]},null,false,false]},null,false,false]},null,false,false],[\"$\",\"$1\",\"h\",{\"children\":[null,[\"$\",\"$L8\",null,{\"children\":\"$L9\"}],[\"$\",\"div\",null,{\"hidden\":true,\"children\":[\"$\",\"$La\",null,{\"children\":[\"$\",\"$6\",null,{\"name\":\"Next.Metadata\",\"children\":\"$Lb\"}]}]}],null]}],false]],\"m\":\"$undefined\",\"G\":[\"$c\",[]],\"S\":true}\n"])</script><script>self.__next_f.push([1,"d:I[62472,[\"/_next/static/chunks/e8a64840de2db263.js\",\"/_next/static/chunks/223bb6d08dd3e7e3.js\",\"/_next/static/chunks/c155ac4970f05a3f.js\"],\"default\"]\n4:[\"$\",\"$Ld\",null,{\"categoryId\":\"engineering\",\"itemId\":\"build-optimization\"}]\n"])</script><script>self.__next_f.push([1,"9:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\n"])</script><script>self.__next_f.push([1,"e:I[27201,[\"/_next/static/chunks/ff1a16fafef87110.js\",\"/_next/static/chunks/d2be314c3ece3fbe.js\"],\"IconMark\"]\n7:null\nb:[[\"$\",\"title\",\"0\",{\"children\":\"前端知识宝典 - Senior Frontend Knowledge Guide\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"资深前端开发知识点集合，包含 React、Vue、TypeScript、性能优化、安全、工程化等内容\"}],[\"$\",\"link\",\"2\",{\"rel\":\"icon\",\"href\":\"/favicon.ico?favicon.0b3bf435.ico\",\"sizes\":\"256x256\",\"type\":\"image/x-icon\"}],[\"$\",\"$Le\",\"3\",{}]]\n"])</script></body></html>

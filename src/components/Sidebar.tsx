@@ -102,9 +102,10 @@ export default function Sidebar() {
   });
 
   return (
-    <Sider 
-      width={300} 
+    <Sider
+      width={300}
       theme="light"
+      className="sidebar-sider"
       style={{
         position: 'fixed',
         left: 0,
@@ -115,7 +116,7 @@ export default function Sidebar() {
         zIndex: 1000
       }}
     >
-      <div className="p-6 border-b border-gray-200">
+      <div className="p-6 sidebar-header">
         <Link href="/" className="block">
           <div className="flex items-center gap-3 mb-2">
             <Avatar 

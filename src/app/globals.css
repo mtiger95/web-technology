@@ -126,19 +126,6 @@ body {
   font-style: italic;
 }
 
-/* 卡片悬停效果 */
-.ant-card {
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  border: 1px solid var(--border-color);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-.ant-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  border-color: var(--primary-color);
-}
-
 /* 按钮样式优化 */
 .ant-btn {
   border-radius: 8px;
@@ -299,6 +286,52 @@ h1, h2, h3, h4, h5, h6 {
 .ant-layout-sider {
   background: var(--sidebar-bg);
   box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar 组件样式 */
+.sidebar-sider {
+  background: var(--sidebar-bg) !important;
+}
+
+.sidebar-header {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.sidebar-menu .ant-menu {
+  background: var(--sidebar-bg) !important;
+}
+
+.sidebar-menu .ant-menu-item {
+  color: var(--color-text-secondary) !important;
+}
+
+.sidebar-menu .ant-menu-item:hover {
+  background: var(--color-sidebar-hover) !important;
+  color: var(--color-primary) !important;
+}
+
+.sidebar-menu .ant-menu-item-selected {
+  background: var(--color-sidebar-hover) !important;
+  color: var(--color-primary) !important;
+}
+
+.sidebar-menu .ant-menu-submenu-title {
+  color: var(--color-foreground) !important;
+}
+
+/* 暗色模式下菜单样式 */
+[data-theme="dark"] .sidebar-menu .ant-menu-item {
+  color: var(--color-text-secondary) !important;
+}
+
+[data-theme="dark"] .sidebar-menu .ant-menu-item:hover {
+  background: var(--color-sidebar-hover) !important;
+  color: var(--color-primary) !important;
+}
+
+[data-theme="dark"] .sidebar-menu .ant-menu-item-selected {
+  background: var(--color-sidebar-hover) !important;
+  color: var(--color-primary) !important;
 }
 
 /* 内容区域优化 */
@@ -489,5 +522,32 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .ant-breadcrumb-item:last-child span {
+  color: var(--color-foreground) !important;
+}
+
+/* 主题切换按钮固定定位 */
+.theme-toggle-button {
+  position: fixed !important;
+  top: 16px;
+  right: 32px;
+  z-index: 1001 !important;
+  background: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(190, 141, 141, 0.6) !important;
+  color: var(--color-foreground) !important;
+  width: 40px; 
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  transition: all 0.2s ease !important;
+}
+
+.theme-toggle-button:hover {
+  background: rgba(99, 102, 241, 0.2) !important;
+  border-color: var(--color-primary) !important;
+  transform: scale(1.1) !important;
+}
+
+[data-theme="dark"] .theme-toggle-button {
   color: var(--color-foreground) !important;
 }

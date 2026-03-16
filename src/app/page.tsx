@@ -5,7 +5,6 @@ import { Layout, Card, Input, Space, Tag, Typography, Button, Empty } from 'antd
 import { SearchOutlined, BookOutlined } from '@ant-design/icons';
 import Link from 'next/link';
 import Sidebar from '@/components/Sidebar';
-import ThemeToggle from '@/components/ThemeToggle';
 import { knowledgeList, categories } from '@/data';
 import { getDifficultyColor, getDifficultyText, getDifficultyEmoji } from '@/utils/difficulty';
 
@@ -31,20 +30,20 @@ export default function HomePage() {
       <Sidebar />
       <Layout style={{ marginLeft: 300 }}>
         <Content style={{ minHeight: '100vh', padding: '32px', background: 'var(--color-background)' }}>
-          <div style={{ maxWidth: 1200, margin: '0 auto', position: 'relative' }}>
-            <ThemeToggle />
+          <div style={{ maxWidth: 1200, margin: '0 auto' }}>
             {/* 搜索和筛选区域 */}
-            <Card  
+            <Card
               className="search-card"
-              style={{ 
-                marginBottom: '18px', 
+              style={{
+                marginBottom: '18px',
                 boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
                 border: '1px solid var(--color-border)',
                 position: 'sticky',
                 top: 0,
                 backgroundColor: 'var(--color-card-bg)',
-                zIndex: 1000
+                zIndex: 99
               }}
+              hoverable={false}
             >
               <Space orientation="vertical" style={{ width: '100%' }} size="small">
                 <Search
@@ -101,14 +100,14 @@ export default function HomePage() {
               </Text>
               {filteredItems.length > 0 && (
                 <Text className="result-info-text" style={{ fontSize: '12px' }}>
-                  {selectedCategory === 'all' ? '显示所有分类' : `当前分类: ${categories.find(c => c.id === selectedCategory)?.name}`}
+                  {selectedCategory === 'all' ? '所有分类' : `当前分类: ${categories.find(c => c.id === selectedCategory)?.name}`}
                 </Text>
               )}
             </div>
 
             {/* 知识点列表 */}
             {filteredItems.length === 0 ? (
-              <Card style={{ borderRadius: '16px', textAlign: 'center', padding: '60px 24px' }}>
+              <Card style={{ borderRadius: '16px', textAlign: 'center', padding: '60px 24px' }} hoverable={false}>
                 <Empty
                   image={Empty.PRESENTED_IMAGE_SIMPLE}
                   description={
