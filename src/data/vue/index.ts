@@ -4,6 +4,14 @@ import { vue_composition_api } from './items/vue-composition-api';
 import { vue_router } from './items/vue-router';
 import { vue_pinia } from './items/vue-pinia';
 import { vue_ecosystem } from './items/vue-ecosystem';
+import { vue_advanced_features } from './items/vue-advanced-features';
+import { vue_performance_optimization } from './items/vue-performance-optimization';
+import { vue_interview_questions } from './items/vue-interview-questions';
+import { vue2_vs_vue3 } from './items/vue2-vs-vue3';
+import { vue_router_deep_dive } from './items/vue-router-deep-dive';
+import { vue_pinia_deep_dive } from './items/vue-pinia-deep-dive';
+import { vue_practical_skills } from './items/vue-practical-skills';
+import { vue_testing_guide } from './items/vue-testing-guide';
 
 export const vueCategoryData: CategoryData = {
   category: {
@@ -11,15 +19,23 @@ export const vueCategoryData: CategoryData = {
     id: 'vue',
     name: 'Vue 生态',
     icon: '💚',
-    count: 6,
+    count: 14,
     description: 'Vue.js 框架的核心概念、生态系统和最佳实践'
   
   },
   items: [
     vue_fundamentals,
-  vue_composition_api,
-  vue_router,
-  vue_pinia,
-  vue_ecosystem
+    vue_composition_api,
+    vue_router,
+    vue_pinia,
+    vue_ecosystem,
+    vue_advanced_features,
+    vue_performance_optimization,
+    vue_interview_questions,
+    vue2_vs_vue3,
+    vue_router_deep_dive,
+    vue_pinia_deep_dive,
+    vue_practical_skills,
+    vue_testing_guide
   ]
 };
