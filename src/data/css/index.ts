@@ -10,6 +10,7 @@ import { css_architecture } from './items/css-architecture';
 import { css_variables } from './items/css-variables';
 import { css_selectors } from './items/css-selectors';
 import { css_modern_features } from './items/css-modern-features';
+import { css_figma_restoration } from './items/css-figma-restoration';
 
 export const cssCategoryData: CategoryData = {
   category: {
@@ -17,7 +18,7 @@ export const cssCategoryData: CategoryData = {
     id: 'css',
     name: 'CSS 布局',
     icon: '🎨',
-    count: 15,
+    count: 16,
     description: 'CSS 布局、样式设计和响应式开发的核心知识'
   
   },
@@ -32,6 +33,7 @@ export const cssCategoryData: CategoryData = {
   css_architecture,
   css_variables,
   css_selectors,
-  css_modern_features
+  css_modern_features,
+  css_figma_restoration
   ]
 };
