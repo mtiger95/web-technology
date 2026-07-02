@@ -5,35 +5,13 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Menu, Layout, Typography, Avatar } from 'antd';
 import type { MenuProps } from 'antd';
-import { 
-  HomeOutlined, 
-  CodeOutlined, 
-  LayoutOutlined, 
-  SafetyOutlined, 
-  RocketOutlined, 
-  BookOutlined, 
-  MonitorOutlined, 
-  BranchesOutlined,
-  ThunderboltOutlined
+import {
+  BookOutlined
 } from '@ant-design/icons';
 import { categories, knowledgeList } from '@/data';
-import { getDifficultyEmoji } from '@/utils/difficulty';
 
 const { Sider } = Layout;
 const { Title, Text } = Typography;
-
-const iconMap: Record<string, React.ReactNode> = {
-  all: <HomeOutlined />,
-  css: <LayoutOutlined />,
-  javascript: <CodeOutlined />,
-  vue: <BookOutlined />,
-  react: <ThunderboltOutlined />,
-  security: <SafetyOutlined />,
-  performance: <RocketOutlined />,
-  engineering: <BranchesOutlined />,
-  browser: <MonitorOutlined />,
-  ai: <ThunderboltOutlined />
-};
 
 export default function Sidebar() {
   const pathname = usePathname();
@@ -56,13 +34,9 @@ export default function Sidebar() {
   const menuItems: MenuItem[] = [
     {
       key: 'all',
-      icon: iconMap['all'],
       label: (
-        <Link href="/" className="flex items-center justify-between">
+        <Link href="/" title="全部知识点">
           <span>全部知识点</span>
-          <span className="text-xs opacity-70 bg-white/10 px-2 py-1 rounded-full">
-            {knowledgeList.length}
-          </span>
         </Link>
       ),
       selected: currentCategory === 'all'
@@ -75,11 +49,8 @@ export default function Sidebar() {
       .map(item => ({
         key: `${category.id}-${item.id}`,
         label: (
-          <Link href={`/${category.id}/${item.id}`} className="flex items-center gap-2">
-            <span className="flex-1">{item.title}</span>
-            <span className="text-xs opacity-50">
-              {getDifficultyEmoji(item.difficulty)}
-            </span>
+          <Link href={`/${category.id}/${item.id}`} title={item.title}>
+            <span>{item.title}</span>
           </Link>
         ),
         selected: currentCategory === category.id && currentId === item.id
@@ -87,14 +58,8 @@ export default function Sidebar() {
 
     menuItems.push({
       key: category.id,
-      icon: iconMap[category.id as keyof typeof iconMap] || <BookOutlined />,
       label: (
-        <div className="flex items-center justify-between">
-          <span>{category.name}</span>
-          <span className="text-xs opacity-70 bg-white/10 px-2 py-1 rounded-full">
-            {knowledgeList.filter(item => item.category === category.id).length}
-          </span>
-        </div>
+        <span title={category.name}>{category.name}</span>
       ),
       selected: currentCategory === category.id && !currentId,
       children: categoryItems.length > 0 ? categoryItems : undefined
